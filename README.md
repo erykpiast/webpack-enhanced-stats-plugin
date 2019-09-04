@@ -27,7 +27,7 @@ npm i -D webpack-enhanced-stats-plugin
 In `webpack.config.js`:
 
 ```javascript
-const WebpackEnhancedStatsPlugin = require("webpack-enchanced-stats-plugin")
+const WebpackEnhancedStatsPlugin = require("webpack-enhanced-stats-plugin")
 
 module.exports = {
   // set any source-map devtool (not none/false nor eval)
