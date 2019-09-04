@@ -1,4 +1,7 @@
 # webpack-enhanced-stats-plugin
+
+[![dependencies Status](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin/status.svg)](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin)
+
 Save Webpack stats extended with parsed and original source and size.
 
 Each module in enhanced stats file has four additional fields analogous to
