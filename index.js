@@ -1,9 +1,18 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { SourceMapConsumer } = require('source-map');
+const {
+  SourceMapConsumer,
+} = require('source-map');
 
-const { tap, tapPromise } = require('./lib/tap');
-const { fold, uniq } = require('./lib/fold');
+const {
+  tap,
+  tapPromise,
+} = require('./lib/tap');
+const {
+  fold,
+  uniq,
+  last,
+} = require('./lib/fold');
 
 function enhanceModules(modules = [], enhancedModulesMap) {
   return modules.map(({
@@ -21,9 +30,17 @@ function enhanceModules(modules = [], enhancedModulesMap) {
   });
 }
 
+function getIdentifier(filename) {
+  return last(filename.split('!'));
+}
+
 module.exports = class WebpackEnhancedStatsPlugin {
-  constructor({ filename }) {
-    this.options = { filename };
+  constructor({
+    filename,
+  }) {
+    this.options = {
+      filename,
+    };
   }
 
   async apply({
@@ -58,7 +75,7 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 },
               }) => ({
                 ...acc,
-                [_name]: {
+                [getIdentifier(_name)]: {
                   source: _value,
                   size: _value.length,
                 },
