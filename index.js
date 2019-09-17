@@ -8,19 +8,15 @@ const {
   tap,
   tapPromise,
 } = require('./lib/tap');
-const {
-  fold,
-  uniq,
-  last,
-} = require('./lib/fold');
+const fold = require('./lib/fold');
+const ResourceMap = require('./lib/map');
 
 function enhanceModules(modules = [], enhancedModulesMap) {
   return modules.map(({
     modules: submodules,
     ...module
   }) => {
-    const modulePath = module.identifier.split('!').reverse()[0];
-    const enhancedModule = enhancedModulesMap[modulePath] || {};
+    const enhancedModule = enhancedModulesMap.get(module.identifier) || {};
 
     return {
       ...module,
@@ -28,10 +24,6 @@ function enhanceModules(modules = [], enhancedModulesMap) {
       modules: enhanceModules(submodules, enhancedModulesMap),
     };
   });
-}
-
-function getIdentifier(filename) {
-  return last(filename.split('!'));
 }
 
 module.exports = class WebpackEnhancedStatsPlugin {
@@ -59,95 +51,89 @@ module.exports = class WebpackEnhancedStatsPlugin {
         compilation,
         async ({
           hooks: {
-            afterOptimizeDependencies,
+            normalModuleLoader,
             afterOptimizeChunkAssets,
           },
           assets,
         }) => {
-          const [originalSource, parsedSource] = await Promise.all([
-            tap(
-              plugin,
-              afterOptimizeDependencies,
-              (modules) => modules.reduce((acc, {
-                _source: {
-                  _name,
-                  _value,
-                },
-              }) => ({
-                ...acc,
-                [getIdentifier(_name)]: {
-                  source: _value,
-                  size: _value.length,
-                },
-              }), {}),
-            ),
-            tap(
-              plugin,
-              afterOptimizeChunkAssets,
-              async (chunks) => {
-                const sources = Array.from(chunks)
-                  .flatMap((chunk) => chunk.files)
-                  .map((file) => assets[file].sourceAndMap());
-                const modules = await Promise.all(sources.map(async ({
+          const originalSource = new ResourceMap();
+
+          tap(
+            plugin,
+            normalModuleLoader,
+            (loaderContext, mod) => {
+              // eslint-disable-next-line no-param-reassign
+              loaderContext.saveOriginalSource = (source) => {
+                originalSource.set(mod.resource, {
                   source,
-                  map,
-                }) => {
-                  const consumer = await new SourceMapConsumer(map);
-                  return map.sources.map((filepath, index) => {
-                    const mappings = map.sourcesContent[index]
-                      .split('\n')
-                      .flatMap((_, lineNumber) => consumer.allGeneratedPositionsFor({
-                        line: lineNumber + 1,
-                        source: filepath,
-                      })).map(({
-                        column,
-                        lastColumn,
-                      }) => [column, lastColumn]);
+                  size: source.length,
+                });
+              };
+            },
+          );
 
-                    const moduleSource = fold(mappings, source.length)
-                      .map(([start, end]) => source.slice(start, end + 1))
-                      .join('');
+          const parsedSource = await tap(
+            plugin,
+            afterOptimizeChunkAssets,
+            async (chunks) => {
+              const sources = Array.from(chunks)
+                .flatMap((chunk) => chunk.files)
+                .map((file) => assets[file].sourceAndMap());
+              const modules = await Promise.all(sources.map(async ({
+                source,
+                map,
+              }) => {
+                const consumer = await new SourceMapConsumer(map);
+                return map.sources.map((identifier, index) => {
+                  const mappings = map.sourcesContent[index]
+                    .split('\n')
+                    .flatMap((_, lineNumber) => consumer.allGeneratedPositionsFor({
+                      line: lineNumber + 1,
+                      source: identifier,
+                    })).map(({
+                      column,
+                      lastColumn,
+                    }) => [column, lastColumn]);
 
-                    return {
-                      identifier: filepath,
-                      source: moduleSource,
-                      size: moduleSource.length,
-                    };
-                  });
-                }));
+                  const moduleSource = fold(mappings, source.length)
+                    .map(([start, end]) => source.slice(start, end + 1))
+                    .join('');
 
-                return modules.flat().reduce((acc, {
-                  identifier,
+                  return {
+                    identifier,
+                    source: moduleSource,
+                    size: moduleSource.length,
+                  };
+                });
+              }));
+
+              return modules.flat().reduce((resourceMap, {
+                identifier,
+                source,
+                size,
+              }) => {
+                resourceMap.set(identifier, {
                   source,
                   size,
-                }) => ({
-                  ...acc,
-                  [identifier]: {
-                    source,
-                    size,
-                  },
-                }), {});
-              },
-            ),
-          ]);
+                });
+                return resourceMap;
+              }, new ResourceMap());
+            },
+          );
 
-          return uniq([
-            ...Object.keys(originalSource),
-            ...Object.keys(parsedSource),
-          ]).reduce((acc, identifier) => {
-            const parsed = parsedSource[identifier];
-            const original = originalSource[identifier];
+          return {
+            get(key) {
+              const parsed = parsedSource.get(key);
+              const original = originalSource.get(key);
 
-            return {
-              ...acc,
-              [identifier]: {
+              return {
                 parsedSize: parsed ? parsed.size : null,
                 parsedSource: parsed ? parsed.source : null,
                 originalSize: original ? original.size : null,
                 originalSource: original ? original.source : null,
-              },
-            };
-          }, {});
+              };
+            },
+          };
         },
       ),
       tapPromise(plugin, done, (stats) => stats.toJson()),
@@ -171,3 +157,5 @@ module.exports = class WebpackEnhancedStatsPlugin {
     );
   }
 };
+
+module.exports.loader = require.resolve('./loader');
