@@ -35,8 +35,16 @@ const WebpackEnhancedStatsPlugin = require("webpack-enhanced-stats-plugin")
 module.exports = {
   // set any source-map devtool (not none/false nor eval)
   devtool: 'source-map',
+  module: {
+    rules: [
+      // other loaders here, this has to be the last one
+      {
+        loader: WebpackEnhancedStatsPlugin.loader
+      }
+    ]
+  },
   plugins: [
-    // write out stats file to build directory
+    // write out stats file to the output directory
     new WebpackEnhancedStatsPlugin({
       filename: 'stats.json'
     })
