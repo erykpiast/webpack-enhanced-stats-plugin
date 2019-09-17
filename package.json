@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "description": " Updating an unborn branch with changes added to the index.",
   "main": "index.js",
+  "engines": {
+    "node": ">=11.0.0"
+  },
   "directories": {
     "lib": "lib"
   },
