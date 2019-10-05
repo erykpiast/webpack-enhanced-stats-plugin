@@ -28,8 +28,8 @@ function enhanceModules(modules = [], enhancedModulesMap) {
 
 module.exports = class WebpackEnhancedStatsPlugin {
   constructor({
-    filename,
-  }) {
+    filename = 'stats.json',
+  } = {}) {
     this.options = {
       filename,
     };
