@@ -84,6 +84,10 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 source,
                 map,
               }) => {
+                if (!map) {
+                  return [];
+                }
+
                 const consumer = await new SourceMapConsumer(map);
                 return map.sources.map((identifier, index) => {
                   const mappings = map.sourcesContent[index]
