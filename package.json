@@ -15,8 +15,9 @@
     "lib/*.js"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run snapshot",
     "release": "standard-version",
+    "snapshot": "./playground/play.sh",
     "playground:play": "./playground/play.sh",
     "playground:upgrade-deps": "./playground/upgrade-deps.sh"
   },
