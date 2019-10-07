@@ -84,7 +84,7 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 source,
                 map,
               }) => {
-                if (!map) {
+                if (!map || !map.sourcesContent) {
                   return [];
                 }
 
