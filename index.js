@@ -28,11 +28,14 @@ function enhanceModules(modules = [], enhancedModulesMap) {
 
 module.exports = class WebpackEnhancedStatsPlugin {
   constructor({
-    filename,
-  }) {
+    filename = 'stats.json',
+  } = {}) {
     this.options = {
       filename,
     };
+
+    this.originalSource = new ResourceMap();
+    this.parsedSource = new ResourceMap();
   }
 
   async apply({
@@ -56,15 +59,13 @@ module.exports = class WebpackEnhancedStatsPlugin {
           },
           assets,
         }) => {
-          const originalSource = new ResourceMap();
-
           tap(
             plugin,
             normalModuleLoader,
             (loaderContext, mod) => {
               // eslint-disable-next-line no-param-reassign
               loaderContext.saveOriginalSource = (source) => {
-                originalSource.set(mod.resource, {
+                this.originalSource.set(mod.resource, {
                   source,
                   size: source.length,
                 });
@@ -72,7 +73,7 @@ module.exports = class WebpackEnhancedStatsPlugin {
             },
           );
 
-          const parsedSource = await tap(
+          await tap(
             plugin,
             afterOptimizeChunkAssets,
             async (chunks) => {
@@ -83,6 +84,10 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 source,
                 map,
               }) => {
+                if (!map || !map.sourcesContent) {
+                  return [];
+                }
+
                 const consumer = await new SourceMapConsumer(map);
                 return map.sources.map((identifier, index) => {
                   const mappings = map.sourcesContent[index]
@@ -107,24 +112,23 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 });
               }));
 
-              return modules.flat().reduce((resourceMap, {
+              return modules.flat().forEach(({
                 identifier,
                 source,
                 size,
               }) => {
-                resourceMap.set(identifier, {
+                this.parsedSource.set(identifier, {
                   source,
                   size,
                 });
-                return resourceMap;
-              }, new ResourceMap());
+              });
             },
           );
 
           return {
-            get(key) {
-              const parsed = parsedSource.get(key);
-              const original = originalSource.get(key);
+            get: (key) => {
+              const parsed = this.parsedSource.get(key);
+              const original = this.originalSource.get(key);
 
               return {
                 parsedSize: parsed ? parsed.size : null,

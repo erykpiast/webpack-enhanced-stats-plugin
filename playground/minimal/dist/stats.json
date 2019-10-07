@@ -1,0 +1,214 @@
+{
+  "errors": [],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
+  ],
+  "version": "4.41.0",
+  "hash": "3712cfb0cee9f3624785",
+  "time": 1023,
+  "builtAt": 1570476838462,
+  "publicPath": "",
+  "outputPath": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/minimal/dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.js",
+      "main.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 1170,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "main.js.map",
+      "size": 4841,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 289,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js",
+        "main.js.map"
+      ],
+      "hash": "4f9de0c71b6efb58b361",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index.js",
+          "reasons": []
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/minimal/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/minimal/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 0,
+          "size": 289,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/index.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "export default function (a) {\n  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;\n\n  for (var _len = arguments.length, c = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    c[_key - 2] = arguments[_key];\n  }\n\n  return [a, b].concat(c);\n}",
+          "parsedSize": 196,
+          "parsedSource": "r.r(t),t.default=function(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,r=arguments.length,n=new Array(r>2?r-2:0),o=2;o<r;o++)n[o-2]=arguments[o];return[e,t].concat(n)}}]);",
+          "originalSize": 68,
+          "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
+          "modules": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/minimal/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/minimal/src/index.js",
+      "name": "./src/index.js",
+      "index": 0,
+      "index2": 0,
+      "size": 289,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/index.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "export default function (a) {\n  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;\n\n  for (var _len = arguments.length, c = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    c[_key - 2] = arguments[_key];\n  }\n\n  return [a, b].concat(c);\n}",
+      "parsedSize": 196,
+      "parsedSource": "r.r(t),t.default=function(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,r=arguments.length,n=new Array(r>2?r-2:0),o=2;o<r;o++)n[o-2]=arguments[o];return[e,t].concat(n)}}]);",
+      "originalSize": 68,
+      "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
+      "modules": []
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
