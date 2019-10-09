@@ -1,0 +1,23 @@
+{
+  "name": "webpack-enhanced-stats-plugin-playground-json",
+  "version": "1.0.0",
+  "description": "JSON configuration playground for Webpack Enhanced Stats Plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --verbose"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.6.2",
+    "@babel/plugin-transform-runtime": "7.6.2",
+    "@babel/preset-env": "7.6.2",
+    "babel-loader": "8.0.6",
+    "terser-webpack-plugin": "2.1.2",
+    "webpack": "4.41.0",
+    "webpack-bundle-analyzer": "^3.5.2",
+    "webpack-cli": "3.3.9",
+    "webpack-enhanced-stats-plugin": "file:../../"
+  }
+}

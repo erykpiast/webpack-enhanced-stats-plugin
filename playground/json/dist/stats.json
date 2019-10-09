@@ -1,0 +1,486 @@
+{
+  "errors": [],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
+  ],
+  "version": "4.41.0",
+  "hash": "f811291414030ea4e5c2",
+  "time": 214,
+  "builtAt": 1570653399436,
+  "publicPath": "",
+  "outputPath": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.js",
+      "main.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 1120,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "main.js.map",
+      "size": 4783,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 187,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js",
+        "main.js.map"
+      ],
+      "hash": "53d57525d3a06d2b6de4",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index.js",
+          "reasons": []
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
+          "name": "./src/a.json",
+          "index": 1,
+          "index2": 0,
+          "size": 44,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "issuerId": 2,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.json",
+              "loc": "1:0-30"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.json",
+              "loc": "4:22-27"
+            }
+          ],
+          "usedExports": [
+            "foo"
+          ],
+          "providedExports": [
+            "foo",
+            "bar",
+            "baz",
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+          "parsedSize": null,
+          "parsedSource": null,
+          "originalSize": 44,
+          "originalSource": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+          "modules": []
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
+          "name": "./src/b.json",
+          "index": 2,
+          "index2": 1,
+          "size": 44,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "issuerId": 2,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.json",
+              "loc": "2:0-31"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.json",
+              "loc": "4:29-32"
+            }
+          ],
+          "usedExports": [
+            "bar"
+          ],
+          "providedExports": [
+            "foo",
+            "bar",
+            "baz",
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+          "parsedSize": null,
+          "parsedSource": null,
+          "originalSize": 44,
+          "originalSource": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+          "modules": []
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 2,
+          "size": 99,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/index.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "import * as a from './a.json';\nimport { bar } from './b.json';\n\nexport default () => [a.foo, bar];\n",
+          "parsedSize": 52,
+          "parsedSource": "r.r(t);var n=r(0),o=r(1);t.default=()=>[n.a,o.a]}]);",
+          "originalSize": 99,
+          "originalSource": "import * as a from './a.json';\nimport { bar } from './b.json';\n\nexport default () => [a.foo, bar];\n",
+          "modules": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
+      "name": "./src/a.json",
+      "index": 1,
+      "index2": 0,
+      "size": 44,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "issuerId": 2,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.json",
+          "loc": "1:0-30"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.json",
+          "loc": "4:22-27"
+        }
+      ],
+      "usedExports": [
+        "foo"
+      ],
+      "providedExports": [
+        "foo",
+        "bar",
+        "baz",
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+      "parsedSize": null,
+      "parsedSource": null,
+      "originalSize": 44,
+      "originalSource": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+      "modules": []
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
+      "name": "./src/b.json",
+      "index": 2,
+      "index2": 1,
+      "size": 44,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "issuerId": 2,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.json",
+          "loc": "2:0-31"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.json",
+          "loc": "4:29-32"
+        }
+      ],
+      "usedExports": [
+        "bar"
+      ],
+      "providedExports": [
+        "foo",
+        "bar",
+        "baz",
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+      "parsedSize": null,
+      "parsedSource": null,
+      "originalSize": 44,
+      "originalSource": "{\n  \"foo\": 123,\n  \"bar\": 456,\n  \"baz\": 789\n}",
+      "modules": []
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "name": "./src/index.js",
+      "index": 0,
+      "index2": 2,
+      "size": 99,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/index.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "import * as a from './a.json';\nimport { bar } from './b.json';\n\nexport default () => [a.foo, bar];\n",
+      "parsedSize": 52,
+      "parsedSource": "r.r(t);var n=r(0),o=r(1);t.default=()=>[n.a,o.a]}]);",
+      "originalSize": 99,
+      "originalSource": "import * as a from './a.json';\nimport { bar } from './b.json';\n\nexport default () => [a.foo, bar];\n",
+      "modules": []
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
