@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "playground/json/package.json",
+        "playground/minimal/package.json",
+        "playground/multi/package.json"
+      ]
+    }
+  }
+}
