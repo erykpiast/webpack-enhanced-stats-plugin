@@ -1,5 +1,5 @@
 const TerserPlugin = require('terser-webpack-plugin');
-
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const Plugin = require('webpack-enhanced-stats-plugin');
 
 module.exports = {
@@ -35,5 +35,9 @@ module.exports = {
   },
   plugins: [
     new Plugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
   ],
 };

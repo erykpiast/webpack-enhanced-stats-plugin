@@ -1,5 +1,5 @@
 const TerserPlugin = require('terser-webpack-plugin');
-
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const Plugin = require('webpack-enhanced-stats-plugin');
 
 function createConfig(name, babelOptions) {
@@ -29,6 +29,11 @@ function createConfig(name, babelOptions) {
     plugins: [
       new Plugin({
         filename: `${name}.stats.json`,
+      }),
+      new BundleAnalyzerPlugin({
+        reportFilename: `${name}.html`,
+        analyzerMode: 'static',
+        openAnalyzer: false,
       }),
     ],
   };
