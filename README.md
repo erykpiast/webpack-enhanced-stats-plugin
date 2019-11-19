@@ -1,6 +1,6 @@
 # webpack-enhanced-stats-plugin
 
-[![dependencies Status](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin/status.svg)](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin)
+[![dependencies Status](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin/status.svg)](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin) [![Greenkeeper badge](https://badges.greenkeeper.io/erykpiast/webpack-enhanced-stats-plugin.svg)](https://greenkeeper.io/)
 
 Save Webpack stats extended with parsed and original source and size.
 
