@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.6.3",
+    "@babel/core": "7.7.4",
     "@babel/plugin-transform-runtime": "7.6.2",
     "@babel/preset-env": "7.6.3",
     "babel-loader": "8.0.6",
