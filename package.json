@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/erykpiast/webpack-enhanced-stats-plugin#readme",
   "devDependencies": {
-    "eslint": "6.7.0",
+    "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.19.0",
     "standard-version": "7.0.0"
