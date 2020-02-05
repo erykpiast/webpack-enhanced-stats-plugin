@@ -28,9 +28,7 @@
   "keywords": [
     "webpack",
     "stats",
-    "parsed",
-    "original",
-    "source"
+    "plugin"
   ],
   "author": "Eryk Napierała <eryk.piast@gmail.com>",
   "license": "MIT",
