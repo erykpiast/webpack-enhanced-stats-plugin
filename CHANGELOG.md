@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.2.1...v2.3.0) (2020-02-25)
+
+
+### Features
+
+* Handle multi-line output files ([db10d5d](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/db10d5d0934cb395b8db94a8f71643cfd2e89b07))
+
 ### [2.2.1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.2.0...v2.2.1) (2019-12-06)
 
 ## [2.2.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.1.0...v2.2.0) (2019-11-19)
