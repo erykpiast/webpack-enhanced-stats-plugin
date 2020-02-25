@@ -95,14 +95,30 @@ module.exports = class WebpackEnhancedStatsPlugin {
                     .flatMap((_, lineNumber) => consumer.allGeneratedPositionsFor({
                       line: lineNumber + 1,
                       source: identifier,
-                    })).map(({
+                    })).reduce((acc, {
+                      line,
                       column,
                       lastColumn,
-                    }) => [column, lastColumn]);
+                    }) => ({
+                      [line]: [
+                        ...(acc[line] || []),
+                        [column, lastColumn],
+                      ],
+                    }));
+                  const moduleSource = source
+                    .split('\n')
+                    .map((line, index) => {
+                      const mappingsForLine = mappings[index + 1];
 
-                  const moduleSource = fold(mappings, source.length)
-                    .map(([start, end]) => source.slice(start, end + 1))
-                    .join('');
+                      if (!mappingsForLine) {
+                        return '';
+                      }
+
+                      return fold(mappingsForLine, line.length)
+                        .map(([start, end]) => line.slice(start, end + 1))
+                        .join('');
+                    })
+                    .join('\n');
 
                   return {
                     identifier,

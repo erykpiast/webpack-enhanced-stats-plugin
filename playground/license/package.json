@@ -1,0 +1,19 @@
+{
+  "name": "webpack-enhanced-stats-plugin-playground-license",
+  "version": "1.0.0",
+  "description": "Configuration with the license comment for Webpack Enhanced Stats Plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --verbose"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "terser-webpack-plugin": "2.3.5",
+    "webpack": "4.41.6",
+    "webpack-bundle-analyzer": "3.5.2",
+    "webpack-cli": "3.3.10",
+    "webpack-enhanced-stats-plugin": "file:../../"
+  }
+}
