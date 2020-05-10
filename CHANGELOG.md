@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.3.0...v2.4.0) (2020-05-10)
+
+
+### Features
+
+* **node:** declare compatibility with node 10 ([02e3da0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/02e3da076f4ae1ebb07fc85c73575b3613881ee8))
+* **testing:** add a couple of node versions to CI configuration ([c566aa6](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/c566aa656d3ca07008ebefdf51135b63e8884341))
+
 ## [2.3.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.2.1...v2.3.0) (2020-02-25)
 
 
