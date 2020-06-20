@@ -3,12 +3,12 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.41.0",
-  "hash": "f811291414030ea4e5c2",
-  "time": 214,
-  "builtAt": 1570653399436,
+  "version": "4.43.0",
+  "hash": "f9c4c320e4e30e9e0a7d",
+  "time": 257,
+  "builtAt": 1592670637287,
   "publicPath": "",
-  "outputPath": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/dist",
+  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/dist",
   "assetsByChunkName": {
     "main": [
       "main.js",
@@ -84,7 +84,7 @@
         "main.js",
         "main.js.map"
       ],
-      "hash": "53d57525d3a06d2b6de4",
+      "hash": "72a025fc3b25407f87b4",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -103,7 +103,7 @@
       "modules": [
         {
           "id": 0,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
           "name": "./src/a.json",
           "index": 1,
           "index2": 0,
@@ -115,13 +115,13 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "issuerId": 2,
           "issuerName": "./src/index.js",
           "issuerPath": [
             {
               "id": 2,
-              "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "name": "./src/index.js"
             }
           ],
@@ -132,7 +132,7 @@
           "reasons": [
             {
               "moduleId": 2,
-              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
               "type": "harmony side effect evaluation",
@@ -141,7 +141,7 @@
             },
             {
               "moduleId": 2,
-              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
               "type": "harmony import specifier",
@@ -171,7 +171,7 @@
         },
         {
           "id": 1,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
           "name": "./src/b.json",
           "index": 2,
           "index2": 1,
@@ -183,13 +183,13 @@
           "chunks": [
             0
           ],
-          "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "issuerId": 2,
           "issuerName": "./src/index.js",
           "issuerPath": [
             {
               "id": 2,
-              "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "name": "./src/index.js"
             }
           ],
@@ -200,7 +200,7 @@
           "reasons": [
             {
               "moduleId": 2,
-              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
               "type": "harmony side effect evaluation",
@@ -209,7 +209,7 @@
             },
             {
               "moduleId": 2,
-              "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
               "type": "harmony import specifier",
@@ -239,7 +239,7 @@
         },
         {
           "id": 2,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "name": "./src/index.js",
           "index": 0,
           "index2": 2,
@@ -291,7 +291,7 @@
   "modules": [
     {
       "id": 0,
-      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/a.json",
       "name": "./src/a.json",
       "index": 1,
       "index2": 0,
@@ -303,13 +303,13 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
       "issuerId": 2,
       "issuerName": "./src/index.js",
       "issuerPath": [
         {
           "id": 2,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "name": "./src/index.js"
         }
       ],
@@ -320,7 +320,7 @@
       "reasons": [
         {
           "moduleId": 2,
-          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
           "type": "harmony side effect evaluation",
@@ -329,7 +329,7 @@
         },
         {
           "moduleId": 2,
-          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
           "type": "harmony import specifier",
@@ -359,7 +359,7 @@
     },
     {
       "id": 1,
-      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/b.json",
       "name": "./src/b.json",
       "index": 2,
       "index2": 1,
@@ -371,13 +371,13 @@
       "chunks": [
         0
       ],
-      "issuer": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
       "issuerId": 2,
       "issuerName": "./src/index.js",
       "issuerPath": [
         {
           "id": 2,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "name": "./src/index.js"
         }
       ],
@@ -388,7 +388,7 @@
       "reasons": [
         {
           "moduleId": 2,
-          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
           "type": "harmony side effect evaluation",
@@ -397,7 +397,7 @@
         },
         {
           "moduleId": 2,
-          "moduleIdentifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+          "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
           "type": "harmony import specifier",
@@ -427,7 +427,7 @@
     },
     {
       "id": 2,
-      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/json/src/index.js",
       "name": "./src/index.js",
       "index": 0,
       "index2": 2,
