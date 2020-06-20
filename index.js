@@ -1,15 +1,12 @@
 const fs = require('fs').promises;
 const path = require('path');
-const {
-  SourceMapConsumer,
-} = require('source-map');
 
 const {
   tap,
   tapPromise,
 } = require('./lib/tap');
-const fold = require('./lib/fold');
-const ResourceMap = require('./lib/map');
+const thread = require('./lib/thread');
+const getGeneratedSources = require('./lib/get-generated-source');
 
 function enhanceModules(modules = [], enhancedModulesMap) {
   return modules.map(({
@@ -26,6 +23,76 @@ function enhanceModules(modules = [], enhancedModulesMap) {
   });
 }
 
+function getCompilationHooks(compilation) {
+  // eslint-disable-next-line global-require, import/no-unresolved
+  const { NormalModule } = module.exports.webpack || require('webpack');
+
+  if (NormalModule) {
+    const { loader } = NormalModule.getCompilationHooks(compilation);
+    const { afterProcessAssets } = compilation.hooks;
+
+    return {
+      loader,
+      afterProcessAssets,
+    };
+  }
+
+  const {
+    normalModuleLoader: loader,
+    afterOptimizeChunkAssets: afterProcessAssets,
+  } = compilation.hooks;
+
+  return {
+    loader,
+    afterProcessAssets,
+  };
+}
+
+function getSources(chunks, compilation) {
+  if (chunks.length) {
+    return Array.from(chunks)
+      .flatMap((chunk) => chunk.files)
+      .map((file) => compilation.assets[file].sourceAndMap());
+  }
+
+  const maps = Object.keys(chunks).filter((chunkName) => chunkName.endsWith('.map'));
+  return maps.map((mapName) => ({
+    map: chunks[mapName].source(),
+    source: chunks[mapName.slice(0, -4)].source(),
+  }));
+}
+
+function removeWebpackProtocolAndPackageName(requestUrl) {
+  return requestUrl.replace(/^webpack:\/\/[^/]+\//, '');
+}
+
+function removeContext(context) {
+  return (requestUrl) => path.relative(context, requestUrl);
+}
+
+function removeLoaders(requestUrl) {
+  const segments = requestUrl.split('!');
+  return segments[segments.length - 1];
+}
+
+function getParsedIdentifer(requestUrl, context) {
+  return thread(
+    requestUrl,
+    removeLoaders,
+    removeWebpackProtocolAndPackageName,
+    removeContext(context),
+  );
+}
+
+
+function getStatIdentifier(requestUrl, context) {
+  return thread(
+    requestUrl,
+    removeLoaders,
+    removeContext(context),
+  );
+}
+
 module.exports = class WebpackEnhancedStatsPlugin {
   constructor({
     filename = 'stats.json',
@@ -34,8 +101,8 @@ module.exports = class WebpackEnhancedStatsPlugin {
       filename,
     };
 
-    this.originalSource = new ResourceMap();
-    this.parsedSource = new ResourceMap();
+    this.originalSource = new Map();
+    this.parsedSource = new Map();
   }
 
   async apply({
@@ -43,6 +110,7 @@ module.exports = class WebpackEnhancedStatsPlugin {
       compilation,
       done,
     },
+    context,
   }) {
     const plugin = {
       name: 'Assets logger',
@@ -52,20 +120,16 @@ module.exports = class WebpackEnhancedStatsPlugin {
       tap(
         plugin,
         compilation,
-        async ({
-          hooks: {
-            normalModuleLoader,
-            afterOptimizeChunkAssets,
-          },
-          assets,
-        }) => {
+        async (comp) => {
+          const { loader, afterProcessAssets } = getCompilationHooks(comp);
           tap(
             plugin,
-            normalModuleLoader,
+            loader,
             (loaderContext, mod) => {
               // eslint-disable-next-line no-param-reassign
               loaderContext.saveOriginalSource = (source) => {
-                this.originalSource.set(mod.resource, {
+                const identifier = path.relative(context, mod.resource);
+                this.originalSource.set(identifier, {
                   source,
                   size: source.length,
                 });
@@ -75,58 +139,20 @@ module.exports = class WebpackEnhancedStatsPlugin {
 
           await tap(
             plugin,
-            afterOptimizeChunkAssets,
+            afterProcessAssets,
             async (chunks) => {
-              const sources = Array.from(chunks)
-                .flatMap((chunk) => chunk.files)
-                .map((file) => assets[file].sourceAndMap());
-              const modules = await Promise.all(sources.map(async ({
-                source,
-                map,
-              }) => {
-                if (!map || !map.sourcesContent) {
-                  return [];
-                }
+              const sources = getSources(chunks, comp);
+              const modules = await Promise.all(
+                sources.map(async ({ source: generatedSource, map }) => {
+                  const parsed = await getGeneratedSources(map, generatedSource);
 
-                const consumer = await new SourceMapConsumer(map);
-                return map.sources.map((identifier, index) => {
-                  const mappings = map.sourcesContent[index]
-                    .split('\n')
-                    .flatMap((_, lineNumber) => consumer.allGeneratedPositionsFor({
-                      line: lineNumber + 1,
-                      source: identifier,
-                    })).reduce((acc, {
-                      line,
-                      column,
-                      lastColumn,
-                    }) => ({
-                      [line]: [
-                        ...(acc[line] || []),
-                        [column, lastColumn],
-                      ],
-                    }));
-                  const moduleSource = source
-                    .split('\n')
-                    .map((line, index) => {
-                      const mappingsForLine = mappings[index + 1];
-
-                      if (!mappingsForLine) {
-                        return '';
-                      }
-
-                      return fold(mappingsForLine, line.length)
-                        .map(([start, end]) => line.slice(start, end + 1))
-                        .join('');
-                    })
-                    .join('\n');
-
-                  return {
-                    identifier,
-                    source: moduleSource,
-                    size: moduleSource.length,
-                  };
-                });
-              }));
+                  return Object.entries(parsed).map(([key, source]) => ({
+                    identifier: getParsedIdentifer(key, context),
+                    source,
+                    size: source.length,
+                  }));
+                }),
+              );
 
               return modules.flat().forEach(({
                 identifier,
@@ -143,8 +169,10 @@ module.exports = class WebpackEnhancedStatsPlugin {
 
           return {
             get: (key) => {
-              const parsed = this.parsedSource.get(key);
-              const original = this.originalSource.get(key);
+              const identifier = getStatIdentifier(key, context);
+
+              const parsed = this.parsedSource.get(identifier);
+              const original = this.originalSource.get(identifier);
 
               return {
                 parsedSize: parsed ? parsed.size : null,
