@@ -51,7 +51,7 @@ function getCompilationHooks(compilation) {
 function getSources(chunks, compilation) {
   if (chunks.length) {
     return Array.from(chunks)
-      .flatMap((chunk) => chunk.files)
+      .reduce((acc, { files }) => acc.concat(files), [])
       .map((file) => compilation.assets[file].sourceAndMap());
   }
 
@@ -154,16 +154,18 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 }),
               );
 
-              return modules.flat().forEach(({
-                identifier,
-                source,
-                size,
-              }) => {
-                this.parsedSource.set(identifier, {
+              return modules
+                .reduce((acc, item) => acc.concat(item), [])
+                .forEach(({
+                  identifier,
                   source,
                   size,
+                }) => {
+                  this.parsedSource.set(identifier, {
+                    source,
+                    size,
+                  });
                 });
-              });
             },
           );
 
