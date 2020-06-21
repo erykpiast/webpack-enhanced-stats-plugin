@@ -2,5 +2,13 @@
   "extends": "airbnb-base",
   "parserOptions": {
     "ecmaVersion": 10
-  }
+  },
+  "overrides": [{
+    "files": [
+      "**/__tests__/**/*.spec.js"
+    ],
+    "env": {
+      "jest": true
+    }
+  }]
 }

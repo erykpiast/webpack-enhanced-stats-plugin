@@ -15,9 +15,10 @@
     "lib/*.js"
   ],
   "scripts": {
-    "test": "npm run snapshot",
+    "test": "run-p test:*",
+    "test:unit": "jest '.*/__tests__/.*\\.spec\\.js$'",
+    "test:snapshot": "./playground/play.sh",
     "release": "standard-version",
-    "snapshot": "./playground/play.sh",
     "playground:play": "./playground/play.sh",
     "playground:upgrade-deps": "./playground/upgrade-deps.sh"
   },
@@ -37,12 +38,18 @@
   },
   "homepage": "https://github.com/erykpiast/webpack-enhanced-stats-plugin#readme",
   "devDependencies": {
-    "eslint": "6.8.0",
-    "eslint-config-airbnb-base": "14.1.0",
-    "eslint-plugin-import": "2.20.2",
+    "@types/jest": "26.0.0",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.21.2",
+    "jest": "26.0.1",
+    "npm-run-all": "4.1.5",
     "standard-version": "8.0.0"
   },
   "dependencies": {
     "source-map": "0.7.3"
+  },
+  "peerDependencies": {
+    "webpack": ">=4"
   }
 }

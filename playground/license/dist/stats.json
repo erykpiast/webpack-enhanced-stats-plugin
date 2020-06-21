@@ -3,12 +3,12 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.41.6",
-  "hash": "89581b17b68d1c3f1f24",
-  "time": 320,
-  "builtAt": 1582662179088,
+  "version": "4.43.0",
+  "hash": "d3d1f30af27244e9f38d",
+  "time": 182,
+  "builtAt": 1592670595808,
   "publicPath": "",
-  "outputPath": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/license/dist",
+  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/license/dist",
   "assetsByChunkName": {
     "main": [
       "main.js",
@@ -92,7 +92,7 @@
         "main.js",
         "main.js.map"
       ],
-      "hash": "43059092ceff58880a56",
+      "hash": "3cb920b6558c3e5e7d12",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -111,7 +111,7 @@
       "modules": [
         {
           "id": 0,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/license/src/index.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/license/src/index.js",
           "name": "./src/index.js",
           "index": 0,
           "index2": 0,
@@ -149,8 +149,8 @@
           ],
           "depth": 0,
           "source": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
-          "parsedSize": 19,
-          "parsedSource": "\nconsole.log(1)}]);",
+          "parsedSize": 18,
+          "parsedSource": "console.log(1)}]);",
           "originalSize": 54,
           "originalSource": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
           "modules": []
@@ -161,7 +161,7 @@
   "modules": [
     {
       "id": 0,
-      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/license/src/index.js",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/license/src/index.js",
       "name": "./src/index.js",
       "index": 0,
       "index2": 0,
@@ -199,8 +199,8 @@
       ],
       "depth": 0,
       "source": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
-      "parsedSize": 19,
-      "parsedSource": "\nconsole.log(1)}]);",
+      "parsedSize": 18,
+      "parsedSource": "console.log(1)}]);",
       "originalSize": 54,
       "originalSource": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
       "modules": []

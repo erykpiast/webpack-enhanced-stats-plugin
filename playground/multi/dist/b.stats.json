@@ -3,12 +3,12 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.41.0",
-  "hash": "2e3937ea962896378634",
-  "time": 1114,
-  "builtAt": 1570653389847,
+  "version": "4.43.0",
+  "hash": "b4ab27edaecf3ee800f4",
+  "time": 1289,
+  "builtAt": 1592669834307,
   "publicPath": "",
-  "outputPath": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/multi/dist",
+  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/dist",
   "assetsByChunkName": {
     "main": [
       "b.js",
@@ -84,7 +84,7 @@
         "b.js",
         "b.js.map"
       ],
-      "hash": "348f2cc0ee471ea6c7ce",
+      "hash": "5385ff2cd645bc3f7942",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -103,7 +103,7 @@
       "modules": [
         {
           "id": 0,
-          "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/multi/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/multi/src/index.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/src/index.js",
           "name": "./src/index.js",
           "index": 0,
           "index2": 0,
@@ -155,7 +155,7 @@
   "modules": [
     {
       "id": 0,
-      "identifier": "/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/multi/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk.napierala/Projects/webpack-enhanced-stats-plugin/playground/multi/src/index.js",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/src/index.js",
       "name": "./src/index.js",
       "index": 0,
       "index2": 0,

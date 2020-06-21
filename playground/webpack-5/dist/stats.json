@@ -1,0 +1,628 @@
+{
+  "hash": "cc6704e15ec7b6beda71",
+  "version": "5.0.0-beta.17",
+  "time": 1576,
+  "builtAt": 1592669855860,
+  "publicPath": "",
+  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/dist",
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 980,
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "emitted": false,
+      "comparedForEmit": true,
+      "info": {
+        "size": 980
+      },
+      "chunks": [
+        179
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "name": "main.js.map",
+      "size": 3927,
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "emitted": false,
+      "comparedForEmit": true,
+      "info": {
+        "development": true,
+        "size": 3927
+      },
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ],
+      "isOverSizeLimit": false
+    }
+  ],
+  "filteredAssets": 0,
+  "assetsByChunkName": {
+    "main": [
+      "main.js"
+    ]
+  },
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 957,
+      "sizes": {
+        "javascript": 289,
+        "runtime": 668
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "0eb37c9b3ac5f7c832d8",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "filteredModules": 0,
+      "rootModules": [
+        {
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "size": 289,
+          "sizes": {
+            "javascript": 289
+          },
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "runtime": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 714,
+          "issuerId": null,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 86,
+          "sizes": {
+            "runtime": 86
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "filteredRootModules": 0,
+      "nonRootModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js"
+        }
+      ],
+      "modules": [
+        {
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "size": 289,
+          "sizes": {
+            "javascript": 289
+          },
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "runtime": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 714,
+          "issuerId": null,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0,
+          "parsedSize": 177,
+          "parsedSource": "function r(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,o=arguments.length,r=new Array(o>2?o-2:0),n=2;n<o;n++)r[n-2]=arguments[n];return[e,t].concat(r)}",
+          "originalSize": 68,
+          "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
+          "modules": []
+        },
+        {
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null,
+          "parsedSize": 101,
+          "parsedSource": "o.d=(e,t)=>{for(var r in t)o.o(t,r)&&!o.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},",
+          "originalSize": null,
+          "originalSource": null,
+          "modules": []
+        },
+        {
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 86,
+          "sizes": {
+            "runtime": 86
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null,
+          "parsedSize": 53,
+          "parsedSource": "o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),",
+          "originalSize": null,
+          "originalSource": null,
+          "modules": []
+        },
+        {
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "optional": false,
+          "runtime": true,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null,
+          "parsedSize": 167,
+          "parsedSource": "o.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},",
+          "originalSize": null,
+          "originalSource": null,
+          "modules": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+      "name": "./src/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "size": 289,
+      "sizes": {
+        "javascript": 289
+      },
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "runtime": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 714,
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": null,
+          "active": true,
+          "explanation": "used as library export",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "parsedSize": 177,
+      "parsedSource": "function r(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,o=arguments.length,r=new Array(o>2?o-2:0),n=2;n<o;n++)r[n-2]=arguments[n];return[e,t].concat(r)}",
+      "originalSize": 68,
+      "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
+      "modules": []
+    },
+    {
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "optional": false,
+      "runtime": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null,
+      "parsedSize": 101,
+      "parsedSource": "o.d=(e,t)=>{for(var r in t)o.o(t,r)&&!o.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},",
+      "originalSize": null,
+      "originalSource": null,
+      "modules": []
+    },
+    {
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "size": 86,
+      "sizes": {
+        "runtime": 86
+      },
+      "built": false,
+      "optional": false,
+      "runtime": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null,
+      "parsedSize": 53,
+      "parsedSource": "o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),",
+      "originalSize": null,
+      "originalSource": null,
+      "modules": []
+    },
+    {
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "optional": false,
+      "runtime": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null,
+      "parsedSize": 167,
+      "parsedSource": "o.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},",
+      "originalSize": null,
+      "originalSource": null,
+      "modules": []
+    }
+  ],
+  "filteredModules": 0,
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "auxiliaryAssets": [
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "auxiliaryAssets": [
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "message": "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/",
+      "stack": "NoModeWarning: configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/WarnNoModeSetPlugin.js:20:30\n    at Hook.eval [as call] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:15:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/node_modules/tapable/lib/Hook.js:14:14)\n    at Compiler.newCompilation (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:866:30)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:907:29\n    at Hook.eval [as callAsync] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:4:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/node_modules/tapable/lib/Hook.js:18:14)\n    at Compiler.compile (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:902:28)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:433:12\n    at Compiler.readRecords (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:745:11)"
+    }
+  ],
+  "children": []
+}

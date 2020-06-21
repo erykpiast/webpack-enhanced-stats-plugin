@@ -2,6 +2,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const Plugin = require('webpack-enhanced-stats-plugin');
 
+Plugin.webpack = require('webpack');
+
 function createConfig(name, babelOptions) {
   return {
     entry: './src/index.js',
