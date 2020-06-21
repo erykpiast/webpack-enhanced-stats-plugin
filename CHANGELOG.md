@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.4.0...v2.5.0) (2020-06-21)
+
+
+### Features
+
+* **format:** support webpack 5 ([2acb6e8](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/2acb6e8160312b4f684353d8708a3734569dec4f))
+* **testing:** add unit tests infrastracture ([e5d10cc](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/e5d10ccb580010e3ae7f5eec416ee952e1c884d5))
+* **testing:** upgrade all examples by default ([9371b03](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/9371b034c27baee5ddfcecf86d23c5c0d64ea4e2))
+
+
+### Bug Fixes
+
+* **editor:** set ESLint as default formatter ([94c3f6a](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/94c3f6abbf392c357f093fe724b1e155d2701480))
+* **node:** support node v10 again ([399eb06](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/399eb069a82ae3bfe644e992b1057ce2a8a7445e))
+
 ## [2.4.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.3.0...v2.4.0) (2020-05-10)
 
 
