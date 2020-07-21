@@ -39,12 +39,12 @@
   "homepage": "https://github.com/erykpiast/webpack-enhanced-stats-plugin#readme",
   "devDependencies": {
     "@types/jest": "26.0.0",
-    "eslint": "7.2.0",
+    "eslint": "7.4.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.0",
-    "jest": "26.0.1",
+    "jest": "26.1.0",
     "npm-run-all": "4.1.5",
-    "standard-version": "8.0.1"
+    "standard-version": "8.0.2"
   },
   "dependencies": {
     "source-map": "0.7.3"
