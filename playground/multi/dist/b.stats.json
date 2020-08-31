@@ -3,10 +3,10 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.43.0",
-  "hash": "b4ab27edaecf3ee800f4",
-  "time": 1289,
-  "builtAt": 1592669834307,
+  "version": "4.44.1",
+  "hash": "48ce739e61c74c51c210",
+  "time": 804,
+  "builtAt": 1598910621016,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/dist",
   "assetsByChunkName": {
@@ -25,7 +25,9 @@
       "chunkNames": [
         "main"
       ],
-      "info": {},
+      "info": {
+        "minimized": true
+      },
       "emitted": true
     },
     {
@@ -84,7 +86,7 @@
         "b.js",
         "b.js.map"
       ],
-      "hash": "5385ff2cd645bc3f7942",
+      "hash": "4c6b9b9d7c23d01be805",
       "siblings": [],
       "parents": [],
       "children": [],
