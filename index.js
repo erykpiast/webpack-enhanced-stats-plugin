@@ -145,13 +145,19 @@ module.exports = class WebpackEnhancedStatsPlugin {
               const sources = getSources(chunks, comp);
               const modules = await Promise.all(
                 sources.map(async ({ source: generatedSource, map }) => {
-                  const parsed = await getGeneratedSources(map, generatedSource);
+                  try {
+                    const parsed = await getGeneratedSources(map, generatedSource);
 
-                  return Object.entries(parsed).map(([key, source]) => ({
-                    identifier: getParsedIdentifer(key, context),
-                    source,
-                    size: source.length,
-                  }));
+                    return Object.entries(parsed).map(([key, source]) => ({
+                      identifier: getParsedIdentifer(key, context),
+                      source,
+                      size: source.length,
+                    }));
+                  } catch (err) {
+                    // eslint-disable-next-line no-console
+                    console.error(err);
+                    return [];
+                  }
                 }),
               );
 
