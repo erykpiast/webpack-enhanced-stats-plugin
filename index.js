@@ -76,11 +76,19 @@ function removeLoaders(requestUrl) {
   return segments[segments.length - 1];
 }
 
+function removeMultiChunk(requestUrl) {
+  return requestUrl
+    .replace(/^multi /, '')
+    .replace(/ [a-z0-9]{32}$/, '')
+    .replace(/ [0-9]$/, '');
+}
+
 function getParsedIdentifer(requestUrl, context) {
   return thread(
     requestUrl,
     removeLoaders,
     removeWebpackProtocolAndPackageName,
+    removeMultiChunk,
     removeContext(context),
   );
 }
@@ -90,6 +98,7 @@ function getStatIdentifier(requestUrl, context) {
   return thread(
     requestUrl,
     removeLoaders,
+    removeMultiChunk,
     removeContext(context),
   );
 }
