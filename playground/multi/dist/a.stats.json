@@ -5,8 +5,8 @@
   ],
   "version": "4.44.1",
   "hash": "565a4ab4f162e80c3114",
-  "time": 813,
-  "builtAt": 1598910621013,
+  "time": 2942,
+  "builtAt": 1600723069614,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/dist",
   "assetsByChunkName": {
