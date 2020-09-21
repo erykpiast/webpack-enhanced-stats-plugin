@@ -52,7 +52,8 @@ function getSources(chunks, compilation) {
   if (chunks.length) {
     return Array.from(chunks)
       .reduce((acc, { files }) => acc.concat(files), [])
-      .map((file) => compilation.assets[file].sourceAndMap());
+      .map((file) => compilation.assets[file].sourceAndMap())
+      .filter(({ map }) => map !== null);
   }
 
   const maps = Object.keys(chunks).filter((chunkName) => chunkName.endsWith('.map'));
