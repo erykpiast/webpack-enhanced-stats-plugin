@@ -52,7 +52,8 @@ function getSources(chunks, compilation) {
   if (chunks.length) {
     return Array.from(chunks)
       .reduce((acc, { files }) => acc.concat(files), [])
-      .map((file) => compilation.assets[file].sourceAndMap());
+      .map((file) => compilation.assets[file].sourceAndMap())
+      .filter(({ map }) => map !== null);
   }
 
   const maps = Object.keys(chunks).filter((chunkName) => chunkName.endsWith('.map'));
@@ -75,11 +76,19 @@ function removeLoaders(requestUrl) {
   return segments[segments.length - 1];
 }
 
+function removeMultiChunk(requestUrl) {
+  return requestUrl
+    .replace(/^multi /, '')
+    .replace(/ [a-z0-9]{32}$/, '')
+    .replace(/ [0-9]$/, '');
+}
+
 function getParsedIdentifer(requestUrl, context) {
   return thread(
     requestUrl,
     removeLoaders,
     removeWebpackProtocolAndPackageName,
+    removeMultiChunk,
     removeContext(context),
   );
 }
@@ -89,6 +98,7 @@ function getStatIdentifier(requestUrl, context) {
   return thread(
     requestUrl,
     removeLoaders,
+    removeMultiChunk,
     removeContext(context),
   );
 }
@@ -144,13 +154,19 @@ module.exports = class WebpackEnhancedStatsPlugin {
               const sources = getSources(chunks, comp);
               const modules = await Promise.all(
                 sources.map(async ({ source: generatedSource, map }) => {
-                  const parsed = await getGeneratedSources(map, generatedSource);
+                  try {
+                    const parsed = await getGeneratedSources(map, generatedSource);
 
-                  return Object.entries(parsed).map(([key, source]) => ({
-                    identifier: getParsedIdentifer(key, context),
-                    source,
-                    size: source.length,
-                  }));
+                    return Object.entries(parsed).map(([key, source]) => ({
+                      identifier: getParsedIdentifer(key, context),
+                      source,
+                      size: source.length,
+                    }));
+                  } catch (err) {
+                    // eslint-disable-next-line no-console
+                    console.error(err);
+                    return [];
+                  }
                 }),
               );
 

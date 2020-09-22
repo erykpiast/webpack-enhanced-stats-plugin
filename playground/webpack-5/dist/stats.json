@@ -1,8 +1,8 @@
 {
   "hash": "aa02cee40d75d95dc5c3",
   "version": "5.0.0-beta.29",
-  "time": 905,
-  "builtAt": 1598910799515,
+  "time": 2974,
+  "builtAt": 1600723077872,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/dist",
   "assets": [
@@ -16,8 +16,8 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "emitted": true,
-      "comparedForEmit": false,
+      "emitted": false,
+      "comparedForEmit": true,
       "info": {
         "minimized": true,
         "related": {
@@ -37,8 +37,8 @@
             "main"
           ],
           "auxiliaryChunkIdHints": [],
-          "emitted": true,
-          "comparedForEmit": false,
+          "emitted": false,
+          "comparedForEmit": true,
           "info": {
             "development": true,
             "size": 3923
@@ -634,7 +634,7 @@
   "warnings": [
     {
       "message": "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/",
-      "stack": "NoModeWarning: configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/WarnNoModeSetPlugin.js:20:30\n    at Hook.eval [as call] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:17:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:14:14)\n    at Compiler.newCompilation (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:908:30)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:950:29\n    at Hook.eval [as callAsync] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:4:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:18:14)\n    at Compiler.compile (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:945:28)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:450:12\n    at Compiler.readRecords (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:787:11)"
+      "stack": "NoModeWarning: configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/WarnNoModeSetPlugin.js:20:30\n    at Hook.eval [as call] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:19:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:14:14)\n    at Compiler.newCompilation (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:908:30)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:950:29\n    at Hook.eval [as callAsync] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:18:14)\n    at Compiler.compile (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:945:28)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:450:12\n    at Compiler.readRecords (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:787:11)"
     }
   ],
   "children": []
