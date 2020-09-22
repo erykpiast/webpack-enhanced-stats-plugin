@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.5.1...v2.6.0) (2020-09-22)
+
+
+### Features
+
+* **format:** support multi-chunk setups ([dc2a64e](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/dc2a64ef127458d56e13b2fae754c2a6c7d0f546))
+
+
+### Bug Fixes
+
+* **format:** filter out files without source map ([a2f429a](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/a2f429a2fc9199ec6005930719c42a16c041076c))
+
 ### [2.5.1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.5.0...v2.5.1) (2020-09-01)
 
 
