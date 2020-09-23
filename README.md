@@ -2,7 +2,7 @@
 
 [![dependencies Status](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin/status.svg)](https://david-dm.org/erykpiast/webpack-enhanced-stats-plugin) [![Greenkeeper badge](https://badges.greenkeeper.io/erykpiast/webpack-enhanced-stats-plugin.svg)](https://greenkeeper.io/)
 
-Save Webpack stats extended with parsed and original source and size.
+Save Webpack stats extended with parsed and original source and size. This plugin is recommended to install when you use [webpack-stats-explorer](https://github.com/erykpiast/webpack-stats-explorer).
 
 Each module in enhanced stats file has four additional fields analogous to
 `source` and `size`, but related to original source code and "parsed" code
