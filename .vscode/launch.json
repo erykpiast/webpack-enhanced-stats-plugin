@@ -8,10 +8,7 @@
             "args": ["--runInBand"],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "disableOptimisticBPs": true,
-            "windows": {
-                "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-            }
+            "disableOptimisticBPs": true
         },
         {
             "type": "node",
@@ -21,10 +18,7 @@
             "args": ["${fileBasenameNoExtension}"],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "disableOptimisticBPs": true,
-            "windows": {
-                "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-            }
+            "disableOptimisticBPs": true
         }
     ]
 }
