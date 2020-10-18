@@ -13,12 +13,21 @@ function enhanceModules(modules = [], enhancedModulesMap) {
     modules: submodules,
     ...module
   }) => {
+    const enhancedSubmodules = enhanceModules(submodules, enhancedModulesMap);
+
+    if (!('source' in module)) {
+      return {
+        ...module,
+        modules: enhancedSubmodules,
+      };
+    }
+
     const enhancedModule = enhancedModulesMap.get(module.identifier) || {};
 
     return {
       ...module,
       ...enhancedModule,
-      modules: enhanceModules(submodules, enhancedModulesMap),
+      modules: enhancedSubmodules,
     };
   });
 }
