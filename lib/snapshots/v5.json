@@ -1,9 +1,125 @@
 {
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/universalModuleDefinition": "function(e,t){if(\"object\"==typeof exports&&\"object\"==typeof module)module.exports=t();else if(\"function\"==typeof define&&define.amd)define([],t);else{var o=t();for(var r in o)(\"object\"==typeof exports?exports:e)[r]=o[r]}}(window,(function(){return",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/src/index.js": "function r(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,o=arguments.length,r=new Array(o>2?o-2:0),n=2;n<o;n++)r[n-2]=arguments[n];return[e,t].concat(r)}",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/bootstrap": "t={};function o(r){if(t[r])return t[r].exports;var n=t[r]={exports:{}};return e[r](n,n.exports,o),n.exports}",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/startup": "return o(714)})",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/define property getters": "o.d=(e,t)=>{for(var r in t)o.o(t,r)&&!o.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/hasOwnProperty shorthand": "o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),",
-    "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/make namespace object": "o.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},"
-}
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/universalModuleDefinition": {
+        "text": "function(e,t){if(\"object\"==typeof exports&&\"object\"==typeof module)module.exports=t();else if(\"function\"==typeof define&&define.amd)define([],t);else{var o=t();for(var r in o)(\"object\"==typeof exports?exports:e)[r]=o[r]}}(window,(function(){return",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 0,
+              "endIndex": 247
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 0,
+            "endIndex": 247
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/src/index.js": {
+        "text": "function r(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,o=arguments.length,r=new Array(o>2?o-2:0),n=2;n<o;n++)r[n-2]=arguments[n];return[e,t].concat(r)}",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 287,
+              "endIndex": 464
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 287,
+            "endIndex": 464
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/bootstrap": {
+        "text": "t={};function o(r){if(t[r])return t[r].exports;var n=t[r]={exports:{}};return e[r](n,n.exports,o),n.exports}",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 496,
+              "endIndex": 604
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 496,
+            "endIndex": 604
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/startup": {
+        "text": "return o(714)})",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 604,
+              "endIndex": 611
+            },
+            {
+              "startIndex": 932,
+              "endIndex": 940
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 604,
+            "endIndex": 940
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/define property getters": {
+        "text": "o.d=(e,t)=>{for(var r in t)o.o(t,r)&&!o.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 611,
+              "endIndex": 712
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 611,
+            "endIndex": 712
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/hasOwnProperty shorthand": {
+        "text": "o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 712,
+              "endIndex": 765
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 712,
+            "endIndex": 765
+          }
+        }
+      },
+      "webpack://webpack-enhanced-stats-plugin-playground-minimal/webpack/runtime/make namespace object": {
+        "text": "o.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},",
+        "ranges": {
+          "0": [
+            {
+              "startIndex": 765,
+              "endIndex": 932
+            }
+          ]
+        },
+        "boundaries": {
+          "0": {
+            "startIndex": 765,
+            "endIndex": 932
+          }
+        }
+      }
+    }
