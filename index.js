@@ -7,6 +7,7 @@ const {
 } = require('./lib/tap');
 const getGeneratedSources = require('./lib/get-generated-source');
 const getParsedModules = require('./lib/get-parsed-modules');
+const getSources = require('./lib/get-sources');
 const { getStatIdentifier, getParsedIdentifer } = require('./lib/identifier');
 
 function enhanceModules(modules = [], enhancedModulesMap) {
@@ -56,21 +57,6 @@ function getCompilationHooks(compilation) {
     loader,
     afterProcessAssets,
   };
-}
-
-function getSources(chunks, compilation) {
-  if (chunks.length) {
-    return Array.from(chunks)
-      .reduce((acc, { files }) => acc.concat(files), [])
-      .map((file) => compilation.assets[file].sourceAndMap())
-      .filter(({ map }) => map !== null);
-  }
-
-  const maps = Object.keys(chunks).filter((chunkName) => chunkName.endsWith('.map'));
-  return maps.map((mapName) => ({
-    map: chunks[mapName].source(),
-    source: chunks[mapName.slice(0, -4)].source(),
-  }));
 }
 
 module.exports = class WebpackEnhancedStatsPlugin {
@@ -154,7 +140,7 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 });
 
               getParsedModules({
-                chunks,
+                sources,
                 context,
                 assets: comp.assets,
                 regeneratedSourcesMap,
