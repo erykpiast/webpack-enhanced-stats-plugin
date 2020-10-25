@@ -26,8 +26,9 @@
             "name": "Launch Webpack",
             "args": [
                 "--inspect",
-                "${fileDirname}/node_modules/.bin/webpack",
-                "--config ${file}"
+                "${fileDirname}/node_modules/webpack-cli/bin/cli.js",
+                "--config",
+                "${file}"
             ],
             "cwd": "${fileDirname}"
         }
