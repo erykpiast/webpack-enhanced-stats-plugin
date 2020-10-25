@@ -11,14 +11,19 @@ else
     EXAMPLES=("$EXAMPLE");
 fi;
 
-for EXAMPLE in ${EXAMPLES[@]}; do
+for EXAMPLE in ${EXAMPLES[@]}; do 
+    if [[ "$EXAMPLE" == "create-react-app" ]]; then
+        continue;
+    fi
+
     echo "Updating $EXAMPLE";
 
     DIR="$OLD_PWD/playground/$EXAMPLE";
 
     if [[ -d "$DIR" ]]; then
         cd "$DIR";
-        ncu -u;
+        ncu -u -t minor -f webpack,webpack-cli,terser-webpack-plugin;
+        ncu -u -t newest -x webpack,webpack-cli,terser-webpack-plugin;
         npm i;
         npm audit fix;
     fi;
