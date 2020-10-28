@@ -1,7 +1,7 @@
 {
-  "name": "webpack-enhanced-stats-plugin-playground-minimal",
+  "name": "webpack-enhanced-stats-plugin-playground-webpack-5",
   "version": "1.0.0",
-  "description": "Minimal configuration playground for Webpack Enhanced Stats Plugin",
+  "description": "Webpack 5 configuration playground for Webpack Enhanced Stats Plugin",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

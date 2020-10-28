@@ -1,7 +1,7 @@
 {
-  "name": "webpack-enhanced-stats-plugin-playground-minimal",
+  "name": "webpack-enhanced-stats-plugin-playground-async",
   "version": "1.0.0",
-  "description": "Minimal configuration playground for Webpack Enhanced Stats Plugin",
+  "description": "Configuration playground for Webpack Enhanced Stats Plugin with async chunk",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
