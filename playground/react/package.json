@@ -10,19 +10,19 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.11.5",
-    "@babel/plugin-transform-runtime": "7.11.5",
-    "@babel/preset-env": "7.11.5",
-    "@babel/preset-react": "7.10.4",
+    "@babel/core": "7.12.3",
+    "@babel/plugin-transform-runtime": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "7.12.1",
     "babel-loader": "8.1.0",
-    "terser-webpack-plugin": "4.1.0",
-    "webpack": "4.44.1",
-    "webpack-bundle-analyzer": "3.8.0",
+    "terser-webpack-plugin": "4.2.3",
+    "webpack": "4.44.2",
+    "webpack-bundle-analyzer": "3.9.0",
     "webpack-cli": "3.3.12",
     "webpack-enhanced-stats-plugin": "file:../../"
   },
   "dependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
