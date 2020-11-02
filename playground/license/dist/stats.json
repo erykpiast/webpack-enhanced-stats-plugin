@@ -3,10 +3,10 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.44.1",
-  "hash": "e01a379ca9bcf266e16b",
-  "time": 631,
-  "builtAt": 1600723062453,
+  "version": "4.44.2",
+  "hash": "e4531415f5f7a9e341f5",
+  "time": 583,
+  "builtAt": 1603923962019,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/license/dist",
   "assetsByChunkName": {
@@ -97,7 +97,7 @@
         "main.js",
         "main.js.map"
       ],
-      "hash": "d4aecbf510876b8fcd7c",
+      "hash": "5825445947e4170ba02f",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -154,8 +154,8 @@
           ],
           "depth": 0,
           "source": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
-          "parsedSize": 18,
-          "parsedSource": "console.log(1)}]);",
+          "parsedSize": 29,
+          "parsedSource": "function(e,t){console.log(1)}",
           "originalSize": 54,
           "originalSource": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
           "modules": []
@@ -204,8 +204,8 @@
       ],
       "depth": 0,
       "source": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
-      "parsedSize": 18,
-      "parsedSource": "console.log(1)}]);",
+      "parsedSize": 29,
+      "parsedSource": "function(e,t){console.log(1)}",
       "originalSize": 54,
       "originalSource": "/**\n * @license\n * Oh my license.\n */\nconsole.log(1);\n",
       "modules": []

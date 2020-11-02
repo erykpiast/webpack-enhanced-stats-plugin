@@ -5,20 +5,31 @@ const {
   tap,
   tapPromise,
 } = require('./lib/tap');
-const thread = require('./lib/thread');
 const getGeneratedSources = require('./lib/get-generated-source');
+const getParsedModules = require('./lib/get-parsed-modules');
+const getSources = require('./lib/get-sources');
+const { getStatIdentifier, getParsedIdentifier } = require('./lib/identifier');
 
 function enhanceModules(modules = [], enhancedModulesMap) {
   return modules.map(({
     modules: submodules,
     ...module
   }) => {
+    const enhancedSubmodules = enhanceModules(submodules, enhancedModulesMap);
+
+    if (!('source' in module)) {
+      return {
+        ...module,
+        modules: enhancedSubmodules,
+      };
+    }
+
     const enhancedModule = enhancedModulesMap.get(module.identifier) || {};
 
     return {
       ...module,
       ...enhancedModule,
-      modules: enhanceModules(submodules, enhancedModulesMap),
+      modules: enhancedSubmodules,
     };
   });
 }
@@ -46,61 +57,6 @@ function getCompilationHooks(compilation) {
     loader,
     afterProcessAssets,
   };
-}
-
-function getSources(chunks, compilation) {
-  if (chunks.length) {
-    return Array.from(chunks)
-      .reduce((acc, { files }) => acc.concat(files), [])
-      .map((file) => compilation.assets[file].sourceAndMap())
-      .filter(({ map }) => map !== null);
-  }
-
-  const maps = Object.keys(chunks).filter((chunkName) => chunkName.endsWith('.map'));
-  return maps.map((mapName) => ({
-    map: chunks[mapName].source(),
-    source: chunks[mapName.slice(0, -4)].source(),
-  }));
-}
-
-function removeWebpackProtocolAndPackageName(requestUrl) {
-  return requestUrl.replace(/^webpack:\/\/[^/]+\//, '');
-}
-
-function removeContext(context) {
-  return (requestUrl) => path.relative(context, requestUrl);
-}
-
-function removeLoaders(requestUrl) {
-  const segments = requestUrl.split('!');
-  return segments[segments.length - 1];
-}
-
-function removeMultiChunk(requestUrl) {
-  return requestUrl
-    .replace(/^multi /, '')
-    .replace(/ [a-z0-9]{32}$/, '')
-    .replace(/ [0-9]$/, '');
-}
-
-function getParsedIdentifer(requestUrl, context) {
-  return thread(
-    requestUrl,
-    removeLoaders,
-    removeWebpackProtocolAndPackageName,
-    removeMultiChunk,
-    removeContext(context),
-  );
-}
-
-
-function getStatIdentifier(requestUrl, context) {
-  return thread(
-    requestUrl,
-    removeLoaders,
-    removeMultiChunk,
-    removeContext(context),
-  );
 }
 
 module.exports = class WebpackEnhancedStatsPlugin {
@@ -157,11 +113,17 @@ module.exports = class WebpackEnhancedStatsPlugin {
                   try {
                     const parsed = await getGeneratedSources(map, generatedSource);
 
-                    return Object.entries(parsed).map(([key, source]) => ({
-                      identifier: getParsedIdentifer(key, context),
-                      source,
-                      size: source.length,
-                    }));
+                    return Object.entries(parsed).map(([key, { text, ranges, boundaries }]) => {
+                      const identifier = getParsedIdentifier(key, context);
+
+                      return {
+                        identifier,
+                        source: text,
+                        size: text.length,
+                        boundaries,
+                        ranges,
+                      };
+                    });
                   } catch (err) {
                     // eslint-disable-next-line no-console
                     console.error(err);
@@ -170,18 +132,20 @@ module.exports = class WebpackEnhancedStatsPlugin {
                 }),
               );
 
-              return modules
+              const regeneratedSourcesMap = new Map();
+              modules
                 .reduce((acc, item) => acc.concat(item), [])
-                .forEach(({
-                  identifier,
-                  source,
-                  size,
-                }) => {
-                  this.parsedSource.set(identifier, {
-                    source,
-                    size,
-                  });
+                .forEach((source) => {
+                  regeneratedSourcesMap.set(source.identifier, source);
                 });
+
+              getParsedModules({
+                sources,
+                context,
+                assets: comp.assets,
+                regeneratedSourcesMap,
+                parsedModules: this.parsedSource,
+              });
             },
           );
 

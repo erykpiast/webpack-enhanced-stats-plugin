@@ -3,10 +3,10 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.44.1",
-  "hash": "48ce739e61c74c51c210",
-  "time": 2843,
-  "builtAt": 1600723069528,
+  "version": "4.44.2",
+  "hash": "a14609eeeeac97af7687",
+  "time": 2318,
+  "builtAt": 1603923968648,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/multi/dist",
   "assetsByChunkName": {
@@ -86,7 +86,7 @@
         "b.js",
         "b.js.map"
       ],
-      "hash": "4c6b9b9d7c23d01be805",
+      "hash": "7eaccc88af21a67b9998",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -145,8 +145,8 @@
           ],
           "depth": 0,
           "source": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}",
-          "parsedSize": 59,
-          "parsedSource": "r.r(t),t.default=function(e,t=1,...r){return[e,t,...r]}}]);",
+          "parsedSize": 85,
+          "parsedSource": "function(e,t,r){\"use strict\";r.r(t),t.default=function(e,t=1,...r){return[e,t,...r]}}",
           "originalSize": 68,
           "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
           "modules": []
@@ -197,8 +197,8 @@
       ],
       "depth": 0,
       "source": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}",
-      "parsedSize": 59,
-      "parsedSource": "r.r(t),t.default=function(e,t=1,...r){return[e,t,...r]}}]);",
+      "parsedSize": 85,
+      "parsedSource": "function(e,t,r){\"use strict\";r.r(t),t.default=function(e,t=1,...r){return[e,t,...r]}}",
       "originalSize": 68,
       "originalSource": "export default function (a, b = 1, ...c) {\n  return [a, b, ...c];\n}\n",
       "modules": []

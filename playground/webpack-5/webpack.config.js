@@ -7,7 +7,7 @@ Plugin.webpack = require('webpack');
 module.exports = {
   entry: './src/index.js',
   output: {
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
   },
   devtool: 'source-map',
   module: {
@@ -35,7 +35,9 @@ module.exports = {
   },
   optimization: {
     minimizer: [new TerserPlugin({
-      sourceMap: true,
+      terserOptions: {
+        sourceMap: true,
+      },
     })],
   },
   plugins: [
