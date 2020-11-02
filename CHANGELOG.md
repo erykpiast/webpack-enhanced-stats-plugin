@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.6.1...v2.7.0) (2020-11-02)
+
+
+### Features
+
+* fix extracting parsed module code ([63912fb](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/63912fb953bd90cf2374ba6c80df8af226e44ced))
+* **format:** add bundle parser from webpack bundle analyzer ([24512b5](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/24512b57a21076fa76d94dea687241619b6cdb4a))
+* **testing:** add debug configuration for Webpack ([545f465](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/545f46534d818cfd59375c2b6a32900f38b59b3f))
+
+
+### Bug Fixes
+
+* use proper module indexes for parsing Webpack 5 bundle ([be6f2d5](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/be6f2d5bb812c5c0fe2d10f8b24b3cf85e5746f8))
+* **testing:** fix launch setup for Webpack 5 ([eb486c7](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/eb486c7fd9536675c61de5bd4fa1a68fffe6d3a9))
+* make it at least not failing with Webpack 5 ([60c7399](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/60c7399a4011d8b23b42c471fae3a771ca599407))
+* **format:** don't enhance modules without source ([1333fab](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/1333fab815c13a5c2f28ba1e2627d29a1e0732d7))
+* **testing:** remove superfluous launch configuration ([b3eb507](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/b3eb507e7f12a6d780d965b4f8d688939bbe966e))
+
 ### [2.6.1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.6.0...v2.6.1) (2020-09-23)
 
 ## [2.6.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.5.1...v2.6.0) (2020-09-22)
