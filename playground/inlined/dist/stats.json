@@ -5,8 +5,8 @@
   ],
   "version": "4.44.2",
   "hash": "9f67e17222d3175ea277",
-  "time": 2960,
-  "builtAt": 1603923957843,
+  "time": 1013,
+  "builtAt": 1604445001998,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined/dist",
   "assetsByChunkName": {
@@ -352,8 +352,8 @@
               ],
               "depth": 0,
               "source": "import a from './a';\nimport b from './b';\nexport default function c(arg1, arg2) {\n  return Promise.all([a(arg1), b(arg2)]);\n}",
-              "parsedSize": 884,
-              "parsedSource": "function(t,r,e){\"use strict\";e.r(r),e.d(r,\"default\",(function(){return p}));var n=e(0),o=e.n(n);function i(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function a(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var a=t.apply(r,e);function u(t){i(a,n,o,u,c,\"next\",t)}function c(t){i(a,n,o,u,c,\"throw\",t)}u(void 0)}))\nfunction c(){return(c=a(o.a.mark\napply(this,arguments)}function f(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function s(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){f(i,n,o,a,u,\"next\",t)}function u(t){f(i,n,o,a,u,\"throw\",t)}a(void 0)}))\nfunction h(){return(h=s(o.a.mark\napply(this,arguments)}function p(t,r){return Promise.all([u(t),l(r)])}",
+              "parsedSize": 889,
+              "parsedSource": "function(t,r,e){\"use strict\";e.r(r),e.d(r,\"default\",(function(){return p}));var n=e(0),o=e.n(n);function i(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function a(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var a=t.apply(r,e);function u(t){i(a,n,o,u,c,\"next\",t)}function c(t){i(a,n,o,u,c,\"throw\",t)}u(void 0)}))}}function c(){return(c=a(o.a.mark(.apply(this,arguments)}function f(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function s(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){f(i,n,o,a,u,\"next\",t)}function u(t){f(i,n,o,a,u,\"throw\",t)}a(void 0)}))}}function h(){return(h=s(o.a.mark(.apply(this,arguments)}function p(t,r){return Promise.all([u(t),l(r)])}}",
               "originalSize": 127,
               "originalSource": "import a from './a';\nimport b from './b';\n\nexport default function c(arg1, arg2) {\n  return Promise.all([a(arg1), b(arg2)]);\n}\n",
               "modules": []
@@ -735,8 +735,8 @@
           ],
           "depth": 0,
           "source": "import a from './a';\nimport b from './b';\nexport default function c(arg1, arg2) {\n  return Promise.all([a(arg1), b(arg2)]);\n}",
-          "parsedSize": 884,
-          "parsedSource": "function(t,r,e){\"use strict\";e.r(r),e.d(r,\"default\",(function(){return p}));var n=e(0),o=e.n(n);function i(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function a(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var a=t.apply(r,e);function u(t){i(a,n,o,u,c,\"next\",t)}function c(t){i(a,n,o,u,c,\"throw\",t)}u(void 0)}))\nfunction c(){return(c=a(o.a.mark\napply(this,arguments)}function f(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function s(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){f(i,n,o,a,u,\"next\",t)}function u(t){f(i,n,o,a,u,\"throw\",t)}a(void 0)}))\nfunction h(){return(h=s(o.a.mark\napply(this,arguments)}function p(t,r){return Promise.all([u(t),l(r)])}",
+          "parsedSize": 889,
+          "parsedSource": "function(t,r,e){\"use strict\";e.r(r),e.d(r,\"default\",(function(){return p}));var n=e(0),o=e.n(n);function i(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function a(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var a=t.apply(r,e);function u(t){i(a,n,o,u,c,\"next\",t)}function c(t){i(a,n,o,u,c,\"throw\",t)}u(void 0)}))}}function c(){return(c=a(o.a.mark(.apply(this,arguments)}function f(t,r,e,n,o,i,a){try{var u=t[i](a),c=u.value}catch(t){return void e(t)}u.done?r(c):Promise.resolve(c).then(n,o)}function s(t){return function(){var r=this,e=arguments;return new Promise((function(n,o){var i=t.apply(r,e);function a(t){f(i,n,o,a,u,\"next\",t)}function u(t){f(i,n,o,a,u,\"throw\",t)}a(void 0)}))}}function h(){return(h=s(o.a.mark(.apply(this,arguments)}function p(t,r){return Promise.all([u(t),l(r)])}}",
           "originalSize": 127,
           "originalSource": "import a from './a';\nimport b from './b';\n\nexport default function c(arg1, arg2) {\n  return Promise.all([a(arg1), b(arg2)]);\n}\n",
           "modules": []

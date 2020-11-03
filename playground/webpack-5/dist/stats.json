@@ -1,8 +1,8 @@
 {
   "hash": "2d0f2eb09daccbcbf781",
-  "version": "5.2.0",
-  "time": 2205,
-  "builtAt": 1603923981525,
+  "version": "5.3.2",
+  "time": 2411,
+  "builtAt": 1604445028609,
   "publicPath": "auto",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/dist",
   "assetsByChunkName": {
@@ -37,19 +37,19 @@
         {
           "type": "sourceMap",
           "name": "main.js.map",
-          "size": 3923,
+          "size": 3937,
           "chunkNames": [],
           "chunkIdHints": [],
           "auxiliaryChunkNames": [
             "main"
           ],
           "auxiliaryChunkIdHints": [],
-          "emitted": false,
-          "comparedForEmit": true,
+          "emitted": true,
+          "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 3923
+            "size": 3937
           },
           "related": {},
           "chunks": [],
@@ -474,11 +474,11 @@
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 3923
+          "size": 3937
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 3923,
+      "auxiliaryAssetsSize": 3937,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -501,11 +501,11 @@
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 3923
+          "size": 3937
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 3923,
+      "auxiliaryAssetsSize": 3937,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
