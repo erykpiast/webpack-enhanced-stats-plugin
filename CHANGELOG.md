@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.7.0...v2.7.1) (2020-11-03)
+
+
+### Bug Fixes
+
+* **parsing:** fix cutting out inlined modules ([e5eee3b](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/e5eee3b3298ae0fe527f537bc7bfee0197f025d7))
+
 ## [2.7.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.6.1...v2.7.0) (2020-11-02)
 
 
