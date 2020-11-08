@@ -22,7 +22,7 @@
       "0": [
         {
           "startIndex": 940,
-          "endIndex": 1136
+          "endIndex": null
         }
       ]
     },
@@ -30,7 +30,7 @@
       "startLine": 0,
       "endLine": 0,
       "startIndex": 940,
-      "endIndex": 1136
+      "endIndex": null
     }
   }
 }
