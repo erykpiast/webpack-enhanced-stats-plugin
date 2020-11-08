@@ -1,6 +1,6 @@
 {
   "name": "webpack-enhanced-stats-plugin",
-  "version": "2.7.1",
+  "version": "2.8.0",
   "description": " Updating an unborn branch with changes added to the index.",
   "main": "index.js",
   "engines": {
