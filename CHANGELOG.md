@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.8.1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.0...v2.8.1) (2020-11-08)
+
+
+### Bug Fixes
+
+* **format:** handle unclosed module edge case properly ([408142f](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/408142fb5222e8649d2ce752d5205171e37f77b1))
+
 ## [2.8.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.7.1...v2.8.0) (2020-11-08)
 
 
