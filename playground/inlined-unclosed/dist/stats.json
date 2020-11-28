@@ -5,10 +5,10 @@
   ],
   "version": "4.44.2",
   "hash": "66c26295e118e146a371",
-  "time": 739,
-  "builtAt": 1604839099347,
+  "time": 3722,
+  "builtAt": 1606606217533,
   "publicPath": "",
-  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/dist",
+  "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/dist",
   "assetsByChunkName": {
     "main": [
       "main.js",
@@ -32,7 +32,7 @@
     },
     {
       "name": "main.js.map",
-      "size": 8998,
+      "size": 9062,
       "chunks": [
         0
       ],
@@ -105,7 +105,7 @@
       "modules": [
         {
           "id": 0,
-          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js 004dc0a90ebc353c86e2ba527354a460",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js ef66a2e99e54e372e55e6860d296b7f1",
           "name": "./src/app.js + 3 modules",
           "index": 0,
           "index2": 3,
@@ -144,7 +144,7 @@
           "modules": [
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "name": "./src/app.js",
               "index": 0,
               "index2": 3,
@@ -180,15 +180,15 @@
               ],
               "depth": 0,
               "source": "import { getUserList, getCurrentUser } from './lib/api';\nimport { renderUserList, renderUser } from './lib/render';\nimport { domReady } from './lib/utils';\n\nfunction init() {\n  var container = document.querySelector('#app');\n  Promise.all([getUserList(), getCurrentUser()]).then(function (data) {\n    container.innerHTML += renderUser(data[0]);\n    container.innerHTML += renderUserList(data[1]);\n  });\n}\n\ndomReady().then(init);",
-              "parsedSize": 163,
-              "parsedSource": "function(n,e,t){\"use strict\"}t.r(e).then((function(){var n=document.querySelector(\"#app\");Promise.all(.then((function(e);n.innerHTML+=o(e[0]),n.innerHTML+==e[1])&}",
+              "parsedSize": 58,
+              "parsedSource": "function(n,e,t){\"use strict\"; =,=,} ,(=,,}t.r(e),.[.{;(=&}",
               "originalSize": 438,
               "originalSource": "import { getUserList, getCurrentUser } from './lib/api';\nimport { renderUserList, renderUser } from './lib/render';\nimport { domReady } from './lib/utils';\n\nfunction init() {\n  const container = document.querySelector('#app');\n\n  Promise.all([\n    getUserList(),\n    getCurrentUser()\n  ]).then((data) => {\n    container.innerHTML += renderUser(data[0]);\n    container.innerHTML += renderUserList(data[1]);\n  });\n}\n\ndomReady().then(init);\n",
               "modules": []
             },
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/utils.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/utils.js",
               "name": "./src/lib/utils.js",
               "index": 2,
               "index2": 0,
@@ -198,13 +198,13 @@
               "optional": false,
               "prefetched": false,
               "chunks": [],
-              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "issuerId": null,
               "issuerName": "./src/app.js",
               "issuerPath": [
                 {
                   "id": null,
-                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "name": "./src/app.js"
                 }
               ],
@@ -215,7 +215,7 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
                   "module": "./src/lib/api.js",
                   "moduleName": "./src/lib/api.js",
                   "type": "harmony side effect evaluation",
@@ -224,7 +224,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
                   "module": "./src/lib/render.js",
                   "moduleName": "./src/lib/render.js",
                   "type": "harmony side effect evaluation",
@@ -233,7 +233,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony side effect evaluation",
@@ -242,7 +242,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
                   "module": "./src/lib/api.js",
                   "moduleName": "./src/lib/api.js",
                   "type": "harmony import specifier",
@@ -251,7 +251,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony import specifier",
@@ -260,7 +260,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
                   "module": "./src/lib/render.js",
                   "moduleName": "./src/lib/render.js",
                   "type": "harmony import specifier",
@@ -281,15 +281,15 @@
               "optimizationBailout": [],
               "depth": 1,
               "source": "export function formatDate(date) {\n  var year = String(date.getFullYear());\n  var month = String(date.getMonth() + 1);\n  var day = String(date.getDate());\n\n  if (month.length < 2) {\n    month = '0' + month;\n  }\n\n  if (day.length < 2) {\n    day = '0' + day;\n  }\n\n  return [year, month, day].join('-');\n}\nexport function mapKeys(mapper, object) {\n  var entries = Object.entries(object);\n  var mappedEntries = entries.map(function (entry) {\n    return [mapper(entry[0]), entry[1]];\n  });\n  return Object.fromEntries(mappedEntries);\n}\nexport function domReady() {\n  return new Promise(function (resolve) {\n    if (document.readyState === 'complete') {\n      resolve();\n    } else {\n      document.addEventListener('DOMContentLoaded', resolve);\n    }\n  });\n}",
-              "parsedSize": 356,
-              "parsedSource": "e=t=r=Object.entries(t).map((function(n){return[e(n[0]),n[1]]})),Object.fromEntries(r);var e,t,r}e,t,r,o,e=t=String(e.getFullYear()),r=String(e.getMonth()+1),o=String(e.getDate()),r.length<2&&(r=\"0\"+r),o.length<2&&(o=\"0\"+o),[t,r,o].join(\"-\")),new Promise((function(n){\"complete\"===document.readyState?n():document.addEventListener(\"DOMContentLoaded\",n)})).",
+              "parsedSize": null,
+              "parsedSource": null,
               "originalSize": 739,
               "originalSource": "export function formatDate(date) {\n  const year = String(date.getFullYear());\n  let month = String(date.getMonth() + 1);\n  let day = String(date.getDate());\n\n  if (month.length < 2) {\n    month = '0' + month;\n  }\n        \n  if (day.length < 2) {\n    day = '0' + day;\n  }\n\n  return [year, month, day].join('-');\n}\n\nexport function mapKeys(mapper, object) {\n  const entries = Object.entries(object);\n  const mappedEntries = entries.map((entry) => [mapper(entry[0]), entry[1]]);\n  return Object.fromEntries(mappedEntries);\n}\n\nexport function domReady() {\n  return new Promise((resolve) => {\n    if (document.readyState === 'complete') {\n      resolve();\n    } else {\n      document.addEventListener('DOMContentLoaded', resolve);\n    }\n  });\n}",
               "modules": []
             },
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
               "name": "./src/lib/api.js",
               "index": 1,
               "index2": 1,
@@ -299,13 +299,13 @@
               "optional": false,
               "prefetched": false,
               "chunks": [],
-              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "issuerId": null,
               "issuerName": "./src/app.js",
               "issuerPath": [
                 {
                   "id": null,
-                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "name": "./src/app.js"
                 }
               ],
@@ -316,7 +316,7 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony side effect evaluation",
@@ -325,7 +325,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony import specifier",
@@ -334,7 +334,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony import specifier",
@@ -353,15 +353,15 @@
               "optimizationBailout": [],
               "depth": 1,
               "source": "import { mapKeys } from './utils';\n\nfunction transformUserKeys(user) {\n  return mapKeys(function (key) {\n    return key.toLowerCase();\n  }, user);\n}\n\nexport function getCurrentUser() {\n  return fetch('/api/me').then(function (response) {\n    return response.json();\n  }).then(transformUserKeys, function () {\n    return null;\n  });\n}\nexport function getUserList() {\n  return fetch('/api/users').then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    return data.ids.map(function (id) {\n      return data.users[id];\n    }).filter(Boolean).map(transformUserKeys);\n  }, function () {\n    return [];\n  });\n}",
-              "parsedSize": 324,
-              "parsedSource": "function r(n){return function(n){return n.toLowerCase()},n,fetch(\"/api/users\").then((function(n){return n.json()})).then((function(n){return n.ids.map((function(e){return n.users[e]})).filter(Boolean).map(r)}),(function(){return[]})),fetch(\"/api/me\").then((function(n){return n.json()})).then(r,(function(){return null}))]).",
+              "parsedSize": null,
+              "parsedSource": null,
               "originalSize": 529,
               "originalSource": "import { mapKeys } from './utils';\n\nfunction transformUserKeys(user) {\n  return mapKeys((key) => key.toLowerCase(), user);\n}\n\nexport function getCurrentUser() {\n  return fetch('/api/me')\n    .then((response) => response.json())\n    .then(transformUserKeys, () => null);\n}\n\nexport function getUserList() {\n  return fetch('/api/users')\n    .then((response) => response.json())\n    .then(\n      (data) => data.ids\n        .map((id) => data.users[id])\n        .filter(Boolean)\n        .map(transformUserKeys),\n      () => []\n    );\n}",
               "modules": []
             },
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
               "name": "./src/lib/render.js",
               "index": 3,
               "index2": 2,
@@ -371,13 +371,13 @@
               "optional": false,
               "prefetched": false,
               "chunks": [],
-              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "issuerId": null,
               "issuerName": "./src/app.js",
               "issuerPath": [
                 {
                   "id": null,
-                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "name": "./src/app.js"
                 }
               ],
@@ -388,7 +388,7 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony side effect evaluation",
@@ -397,7 +397,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony import specifier",
@@ -406,7 +406,7 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+                  "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
                   "module": "./src/app.js",
                   "moduleName": "./src/app.js",
                   "type": "harmony import specifier",
@@ -425,8 +425,8 @@
               "optimizationBailout": [],
               "depth": 1,
               "source": "import { formatDate } from './utils';\nexport function renderUser(user) {\n  if (!user) {\n    user = {\n      name: 'Unknown User',\n      avatar: '/img/default-avatar.png',\n      birthday: 0,\n      role: 'Unknown'\n    };\n  }\n\n  var birthday = new Date(user.birthday);\n  return \"<section>\\n    <header>\\n      <img src=\\\"\".concat(user.avatar, \"\\\">\\n      <h2>\").concat(user.name, \"</h2>\\n    </header>\\n    <dl>\\n      <dt>Birthday</dt>\\n      <dd><time datetime=\\\"\").concat(birthday.toISOString(), \"\\\">\").concat(formatDate(birthday), \"</time></dd>\\n      <dt>Role</dt>\\n      <dd>\").concat(user.role, \"</dd>\\n    </dl>\\n  </section>\");\n}\nexport function renderUserList(users) {\n  if (!users || !users.length) {\n    return '<section>No users</section>';\n  }\n\n  return \"<section>\\n    <header>Users</header>\\n    <ul>\\n      \".concat(users.map(renderUser).join('\\n'), \"\\n    </ul>\\n  </section>\");\n}",
-              "parsedSize": 620,
-              "parsedSource": "function o(n){n||(n={name:\"Unknown User\",avatar:\"/img/default-avatar.png\",birthday:0,role:\"Unknown\"});var i=new Date(n.birthday);return'<section>\\n    <header>\\n      <img src=\"'.concat(n.avatar,'\">\\n      <h2>').concat(n.name,'</h2>\\n    </header>\\n    <dl>\\n      <dt>Birthday</dt>\\n      <dd><time datetime=\"').concat(i.toISOString(),'\">').concat((i,\"</time></dd>\\n      <dt>Role</dt>\\n      <dd>\").concat(n.role,\"</dd>\\n    </dl>\\n  </section>\")}var t;t=t.length?\"<section>\\n    <header>Users</header>\\n    <ul>\\n      \".concat(t.map(o).join(\"\\n\"),\"\\n    </ul>\\n  </section>\"):\"<section>No users</section>\"}))}))}]);",
+              "parsedSize": null,
+              "parsedSource": null,
               "originalSize": 818,
               "originalSource": "import { formatDate } from './utils';\n\nexport function renderUser(user) {\n  if (!user) {\n    user = {\n      name: 'Unknown User',\n      avatar: '/img/default-avatar.png',\n      birthday: 0,\n      role: 'Unknown'\n    };\n  }\n\n  const birthday = new Date(user.birthday);\n  return `<section>\n    <header>\n      <img src=\"${user.avatar}\">\n      <h2>${user.name}</h2>\n    </header>\n    <dl>\n      <dt>Birthday</dt>\n      <dd><time datetime=\"${birthday.toISOString()}\">${formatDate(birthday)}</time></dd>\n      <dt>Role</dt>\n      <dd>${user.role}</dd>\n    </dl>\n  </section>`;\n}\n\nexport function renderUserList(users) {\n  if (!users || !users.length) {\n    return '<section>No users</section>';\n  }\n\n  return `<section>\n    <header>Users</header>\n    <ul>\n      ${users.map(renderUser).join('\\n')}\n    </ul>\n  </section>`;\n}",
               "modules": []
@@ -439,7 +439,7 @@
   "modules": [
     {
       "id": 0,
-      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js 004dc0a90ebc353c86e2ba527354a460",
+      "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js ef66a2e99e54e372e55e6860d296b7f1",
       "name": "./src/app.js + 3 modules",
       "index": 0,
       "index2": 3,
@@ -478,7 +478,7 @@
       "modules": [
         {
           "id": null,
-          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
           "name": "./src/app.js",
           "index": 0,
           "index2": 3,
@@ -514,15 +514,15 @@
           ],
           "depth": 0,
           "source": "import { getUserList, getCurrentUser } from './lib/api';\nimport { renderUserList, renderUser } from './lib/render';\nimport { domReady } from './lib/utils';\n\nfunction init() {\n  var container = document.querySelector('#app');\n  Promise.all([getUserList(), getCurrentUser()]).then(function (data) {\n    container.innerHTML += renderUser(data[0]);\n    container.innerHTML += renderUserList(data[1]);\n  });\n}\n\ndomReady().then(init);",
-          "parsedSize": 163,
-          "parsedSource": "function(n,e,t){\"use strict\"}t.r(e).then((function(){var n=document.querySelector(\"#app\");Promise.all(.then((function(e);n.innerHTML+=o(e[0]),n.innerHTML+==e[1])&}",
+          "parsedSize": 58,
+          "parsedSource": "function(n,e,t){\"use strict\"; =,=,} ,(=,,}t.r(e),.[.{;(=&}",
           "originalSize": 438,
           "originalSource": "import { getUserList, getCurrentUser } from './lib/api';\nimport { renderUserList, renderUser } from './lib/render';\nimport { domReady } from './lib/utils';\n\nfunction init() {\n  const container = document.querySelector('#app');\n\n  Promise.all([\n    getUserList(),\n    getCurrentUser()\n  ]).then((data) => {\n    container.innerHTML += renderUser(data[0]);\n    container.innerHTML += renderUserList(data[1]);\n  });\n}\n\ndomReady().then(init);\n",
           "modules": []
         },
         {
           "id": null,
-          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/utils.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/utils.js",
           "name": "./src/lib/utils.js",
           "index": 2,
           "index2": 0,
@@ -532,13 +532,13 @@
           "optional": false,
           "prefetched": false,
           "chunks": [],
-          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
           "issuerId": null,
           "issuerName": "./src/app.js",
           "issuerPath": [
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "name": "./src/app.js"
             }
           ],
@@ -549,7 +549,7 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
               "module": "./src/lib/api.js",
               "moduleName": "./src/lib/api.js",
               "type": "harmony side effect evaluation",
@@ -558,7 +558,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
               "module": "./src/lib/render.js",
               "moduleName": "./src/lib/render.js",
               "type": "harmony side effect evaluation",
@@ -567,7 +567,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony side effect evaluation",
@@ -576,7 +576,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
               "module": "./src/lib/api.js",
               "moduleName": "./src/lib/api.js",
               "type": "harmony import specifier",
@@ -585,7 +585,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony import specifier",
@@ -594,7 +594,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
               "module": "./src/lib/render.js",
               "moduleName": "./src/lib/render.js",
               "type": "harmony import specifier",
@@ -615,15 +615,15 @@
           "optimizationBailout": [],
           "depth": 1,
           "source": "export function formatDate(date) {\n  var year = String(date.getFullYear());\n  var month = String(date.getMonth() + 1);\n  var day = String(date.getDate());\n\n  if (month.length < 2) {\n    month = '0' + month;\n  }\n\n  if (day.length < 2) {\n    day = '0' + day;\n  }\n\n  return [year, month, day].join('-');\n}\nexport function mapKeys(mapper, object) {\n  var entries = Object.entries(object);\n  var mappedEntries = entries.map(function (entry) {\n    return [mapper(entry[0]), entry[1]];\n  });\n  return Object.fromEntries(mappedEntries);\n}\nexport function domReady() {\n  return new Promise(function (resolve) {\n    if (document.readyState === 'complete') {\n      resolve();\n    } else {\n      document.addEventListener('DOMContentLoaded', resolve);\n    }\n  });\n}",
-          "parsedSize": 356,
-          "parsedSource": "e=t=r=Object.entries(t).map((function(n){return[e(n[0]),n[1]]})),Object.fromEntries(r);var e,t,r}e,t,r,o,e=t=String(e.getFullYear()),r=String(e.getMonth()+1),o=String(e.getDate()),r.length<2&&(r=\"0\"+r),o.length<2&&(o=\"0\"+o),[t,r,o].join(\"-\")),new Promise((function(n){\"complete\"===document.readyState?n():document.addEventListener(\"DOMContentLoaded\",n)})).",
+          "parsedSize": null,
+          "parsedSource": null,
           "originalSize": 739,
           "originalSource": "export function formatDate(date) {\n  const year = String(date.getFullYear());\n  let month = String(date.getMonth() + 1);\n  let day = String(date.getDate());\n\n  if (month.length < 2) {\n    month = '0' + month;\n  }\n        \n  if (day.length < 2) {\n    day = '0' + day;\n  }\n\n  return [year, month, day].join('-');\n}\n\nexport function mapKeys(mapper, object) {\n  const entries = Object.entries(object);\n  const mappedEntries = entries.map((entry) => [mapper(entry[0]), entry[1]]);\n  return Object.fromEntries(mappedEntries);\n}\n\nexport function domReady() {\n  return new Promise((resolve) => {\n    if (document.readyState === 'complete') {\n      resolve();\n    } else {\n      document.addEventListener('DOMContentLoaded', resolve);\n    }\n  });\n}",
           "modules": []
         },
         {
           "id": null,
-          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/api.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/api.js",
           "name": "./src/lib/api.js",
           "index": 1,
           "index2": 1,
@@ -633,13 +633,13 @@
           "optional": false,
           "prefetched": false,
           "chunks": [],
-          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
           "issuerId": null,
           "issuerName": "./src/app.js",
           "issuerPath": [
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "name": "./src/app.js"
             }
           ],
@@ -650,7 +650,7 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony side effect evaluation",
@@ -659,7 +659,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony import specifier",
@@ -668,7 +668,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony import specifier",
@@ -687,15 +687,15 @@
           "optimizationBailout": [],
           "depth": 1,
           "source": "import { mapKeys } from './utils';\n\nfunction transformUserKeys(user) {\n  return mapKeys(function (key) {\n    return key.toLowerCase();\n  }, user);\n}\n\nexport function getCurrentUser() {\n  return fetch('/api/me').then(function (response) {\n    return response.json();\n  }).then(transformUserKeys, function () {\n    return null;\n  });\n}\nexport function getUserList() {\n  return fetch('/api/users').then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    return data.ids.map(function (id) {\n      return data.users[id];\n    }).filter(Boolean).map(transformUserKeys);\n  }, function () {\n    return [];\n  });\n}",
-          "parsedSize": 324,
-          "parsedSource": "function r(n){return function(n){return n.toLowerCase()},n,fetch(\"/api/users\").then((function(n){return n.json()})).then((function(n){return n.ids.map((function(e){return n.users[e]})).filter(Boolean).map(r)}),(function(){return[]})),fetch(\"/api/me\").then((function(n){return n.json()})).then(r,(function(){return null}))]).",
+          "parsedSize": null,
+          "parsedSource": null,
           "originalSize": 529,
           "originalSource": "import { mapKeys } from './utils';\n\nfunction transformUserKeys(user) {\n  return mapKeys((key) => key.toLowerCase(), user);\n}\n\nexport function getCurrentUser() {\n  return fetch('/api/me')\n    .then((response) => response.json())\n    .then(transformUserKeys, () => null);\n}\n\nexport function getUserList() {\n  return fetch('/api/users')\n    .then((response) => response.json())\n    .then(\n      (data) => data.ids\n        .map((id) => data.users[id])\n        .filter(Boolean)\n        .map(transformUserKeys),\n      () => []\n    );\n}",
           "modules": []
         },
         {
           "id": null,
-          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/lib/render.js",
+          "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/lib/render.js",
           "name": "./src/lib/render.js",
           "index": 3,
           "index2": 2,
@@ -705,13 +705,13 @@
           "optional": false,
           "prefetched": false,
           "chunks": [],
-          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+          "issuer": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
           "issuerId": null,
           "issuerName": "./src/app.js",
           "issuerPath": [
             {
               "id": null,
-              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "name": "./src/app.js"
             }
           ],
@@ -722,7 +722,7 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony side effect evaluation",
@@ -731,7 +731,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony import specifier",
@@ -740,7 +740,7 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-broken/src/app.js",
+              "moduleIdentifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/node_modules/babel-loader/lib/index.js??ref--4!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined-unclosed/src/app.js",
               "module": "./src/app.js",
               "moduleName": "./src/app.js",
               "type": "harmony import specifier",
@@ -759,8 +759,8 @@
           "optimizationBailout": [],
           "depth": 1,
           "source": "import { formatDate } from './utils';\nexport function renderUser(user) {\n  if (!user) {\n    user = {\n      name: 'Unknown User',\n      avatar: '/img/default-avatar.png',\n      birthday: 0,\n      role: 'Unknown'\n    };\n  }\n\n  var birthday = new Date(user.birthday);\n  return \"<section>\\n    <header>\\n      <img src=\\\"\".concat(user.avatar, \"\\\">\\n      <h2>\").concat(user.name, \"</h2>\\n    </header>\\n    <dl>\\n      <dt>Birthday</dt>\\n      <dd><time datetime=\\\"\").concat(birthday.toISOString(), \"\\\">\").concat(formatDate(birthday), \"</time></dd>\\n      <dt>Role</dt>\\n      <dd>\").concat(user.role, \"</dd>\\n    </dl>\\n  </section>\");\n}\nexport function renderUserList(users) {\n  if (!users || !users.length) {\n    return '<section>No users</section>';\n  }\n\n  return \"<section>\\n    <header>Users</header>\\n    <ul>\\n      \".concat(users.map(renderUser).join('\\n'), \"\\n    </ul>\\n  </section>\");\n}",
-          "parsedSize": 620,
-          "parsedSource": "function o(n){n||(n={name:\"Unknown User\",avatar:\"/img/default-avatar.png\",birthday:0,role:\"Unknown\"});var i=new Date(n.birthday);return'<section>\\n    <header>\\n      <img src=\"'.concat(n.avatar,'\">\\n      <h2>').concat(n.name,'</h2>\\n    </header>\\n    <dl>\\n      <dt>Birthday</dt>\\n      <dd><time datetime=\"').concat(i.toISOString(),'\">').concat((i,\"</time></dd>\\n      <dt>Role</dt>\\n      <dd>\").concat(n.role,\"</dd>\\n    </dl>\\n  </section>\")}var t;t=t.length?\"<section>\\n    <header>Users</header>\\n    <ul>\\n      \".concat(t.map(o).join(\"\\n\"),\"\\n    </ul>\\n  </section>\"):\"<section>No users</section>\"}))}))}]);",
+          "parsedSize": null,
+          "parsedSource": null,
           "originalSize": 818,
           "originalSource": "import { formatDate } from './utils';\n\nexport function renderUser(user) {\n  if (!user) {\n    user = {\n      name: 'Unknown User',\n      avatar: '/img/default-avatar.png',\n      birthday: 0,\n      role: 'Unknown'\n    };\n  }\n\n  const birthday = new Date(user.birthday);\n  return `<section>\n    <header>\n      <img src=\"${user.avatar}\">\n      <h2>${user.name}</h2>\n    </header>\n    <dl>\n      <dt>Birthday</dt>\n      <dd><time datetime=\"${birthday.toISOString()}\">${formatDate(birthday)}</time></dd>\n      <dt>Role</dt>\n      <dd>${user.role}</dd>\n    </dl>\n  </section>`;\n}\n\nexport function renderUserList(users) {\n  if (!users || !users.length) {\n    return '<section>No users</section>';\n  }\n\n  return `<section>\n    <header>Users</header>\n    <ul>\n      ${users.map(renderUser).join('\\n')}\n    </ul>\n  </section>`;\n}",
           "modules": []
