@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.8.3](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.2...v2.8.3) (2020-11-28)
+
+
+### Bug Fixes
+
+* **format:** shrink parsed sources by one ([b289bf4](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/b289bf463734ab2838ef6df030ef323f8a017901))
+
 ### [2.8.2](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.1...v2.8.2) (2020-11-09)
 
 
