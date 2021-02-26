@@ -39,6 +39,7 @@ module.exports = {
     rules: [
       // other loaders here, this has to be the last one
       {
+        test: [/\.json$/, /\.js$/, /\.jx$/, /\.ts$/, /\.tsx$/, /\.css$/, /\.scss$/],
         loader: WebpackEnhancedStatsPlugin.loader
       }
     ]
