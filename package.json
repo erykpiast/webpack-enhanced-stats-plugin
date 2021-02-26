@@ -49,7 +49,7 @@
   "dependencies": {
     "acorn": "8.0.5",
     "acorn-walk": "8.0.2",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "source-map": "0.7.3"
   },
   "peerDependencies": {
