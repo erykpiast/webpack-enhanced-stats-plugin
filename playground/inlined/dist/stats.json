@@ -3,10 +3,10 @@
   "warnings": [
     "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
   ],
-  "version": "4.44.2",
+  "version": "4.46.0",
   "hash": "9f67e17222d3175ea277",
-  "time": 3463,
-  "builtAt": 1606606175894,
+  "time": 4481,
+  "builtAt": 1614365805126,
   "publicPath": "",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/inlined/dist",
   "assetsByChunkName": {
