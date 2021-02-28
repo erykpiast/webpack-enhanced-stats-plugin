@@ -1,8 +1,8 @@
 {
-  "hash": "2d0f2eb09daccbcbf781",
-  "version": "5.3.2",
-  "time": 2172,
-  "builtAt": 1606606201422,
+  "hash": "6d7613070b0b601545e6",
+  "version": "5.24.2",
+  "time": 3157,
+  "builtAt": 1614365841860,
   "publicPath": "auto",
   "outputPath": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/dist",
   "assetsByChunkName": {
@@ -14,15 +14,9 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 978,
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "emitted": false,
-      "comparedForEmit": true,
+      "size": 849,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
@@ -30,27 +24,33 @@
         "related": {
           "sourceMap": "main.js.map"
         },
-        "size": 978
+        "size": 849
       },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
       "filteredRelated": 0,
       "related": [
         {
           "type": "sourceMap",
           "name": "main.js.map",
-          "size": 3937,
+          "size": 2838,
+          "emitted": true,
+          "comparedForEmit": false,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 2838
+          },
           "chunkNames": [],
           "chunkIdHints": [],
           "auxiliaryChunkNames": [
             "main"
           ],
           "auxiliaryChunkIdHints": [],
-          "emitted": false,
-          "comparedForEmit": true,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 3937
-          },
           "related": {},
           "chunks": [],
           "auxiliaryChunks": [
@@ -72,10 +72,10 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 957,
+      "size": 959,
       "sizes": {
         "javascript": 289,
-        "runtime": 668
+        "runtime": 670
       },
       "names": [
         "main"
@@ -90,7 +90,7 @@
       "auxiliaryFiles": [
         "main.js.map"
       ],
-      "hash": "de19d6ff037a40c6835d",
+      "hash": "4994208ad632dfa253c5",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [],
@@ -109,6 +109,14 @@
         {
           "type": "module",
           "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 289,
+          "sizes": {
+            "javascript": 289
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
           "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
           "name": "./src/index.js",
           "nameForCondition": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
@@ -116,14 +124,7 @@
           "preOrderIndex": 0,
           "index2": 0,
           "postOrderIndex": 0,
-          "size": 289,
-          "sizes": {
-            "javascript": 289
-          },
           "cacheable": true,
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
           "optional": false,
           "orphan": false,
           "dependent": false,
@@ -179,13 +180,7 @@
         {
           "type": "module",
           "moduleType": "runtime",
-          "identifier": "webpack/runtime/define property getters",
-          "name": "webpack/runtime/define property getters",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
+          "layer": null,
           "size": 308,
           "sizes": {
             "runtime": 308
@@ -193,6 +188,13 @@
           "built": false,
           "codeGenerated": true,
           "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
           "optional": false,
           "orphan": false,
           "dependent": false,
@@ -214,6 +216,14 @@
         {
           "type": "module",
           "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
           "identifier": "webpack/runtime/hasOwnProperty shorthand",
           "name": "webpack/runtime/hasOwnProperty shorthand",
           "nameForCondition": null,
@@ -221,13 +231,6 @@
           "preOrderIndex": null,
           "index2": null,
           "postOrderIndex": null,
-          "size": 86,
-          "sizes": {
-            "runtime": 86
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
           "optional": false,
           "orphan": false,
           "dependent": false,
@@ -249,13 +252,7 @@
         {
           "type": "module",
           "moduleType": "runtime",
-          "identifier": "webpack/runtime/make namespace object",
-          "name": "webpack/runtime/make namespace object",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
+          "layer": null,
           "size": 274,
           "sizes": {
             "runtime": 274
@@ -263,6 +260,13 @@
           "built": false,
           "codeGenerated": true,
           "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
           "optional": false,
           "orphan": false,
           "dependent": false,
@@ -288,6 +292,14 @@
     {
       "type": "module",
       "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 289,
+      "sizes": {
+        "javascript": 289
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
       "identifier": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/Users/eryk/Projects/webpack-enhanced-stats-plugin/loader.js!/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
       "name": "./src/index.js",
       "nameForCondition": "/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/src/index.js",
@@ -295,14 +307,7 @@
       "preOrderIndex": 0,
       "index2": 0,
       "postOrderIndex": 0,
-      "size": 289,
-      "sizes": {
-        "javascript": 289
-      },
       "cacheable": true,
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
       "optional": false,
       "orphan": false,
       "issuer": null,
@@ -357,13 +362,7 @@
     {
       "type": "module",
       "moduleType": "runtime",
-      "identifier": "webpack/runtime/define property getters",
-      "name": "webpack/runtime/define property getters",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
+      "layer": null,
       "size": 308,
       "sizes": {
         "runtime": 308
@@ -371,6 +370,13 @@
       "built": false,
       "codeGenerated": true,
       "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
       "optional": false,
       "orphan": false,
       "failed": false,
@@ -391,6 +397,14 @@
     {
       "type": "module",
       "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
       "identifier": "webpack/runtime/hasOwnProperty shorthand",
       "name": "webpack/runtime/hasOwnProperty shorthand",
       "nameForCondition": null,
@@ -398,13 +412,6 @@
       "preOrderIndex": null,
       "index2": null,
       "postOrderIndex": null,
-      "size": 86,
-      "sizes": {
-        "runtime": 86
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
       "optional": false,
       "orphan": false,
       "failed": false,
@@ -425,13 +432,7 @@
     {
       "type": "module",
       "moduleType": "runtime",
-      "identifier": "webpack/runtime/make namespace object",
-      "name": "webpack/runtime/make namespace object",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
+      "layer": null,
       "size": 274,
       "sizes": {
         "runtime": 274
@@ -439,6 +440,13 @@
       "built": false,
       "codeGenerated": true,
       "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
       "optional": false,
       "orphan": false,
       "failed": false,
@@ -466,19 +474,19 @@
       "assets": [
         {
           "name": "main.js",
-          "size": 978
+          "size": 849
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 978,
+      "assetsSize": 849,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 3937
+          "size": 2838
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 3937,
+      "auxiliaryAssetsSize": 2838,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -493,19 +501,19 @@
       "assets": [
         {
           "name": "main.js",
-          "size": 978
+          "size": 849
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 978,
+      "assetsSize": 849,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 3937
+          "size": 2838
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 3937,
+      "auxiliaryAssetsSize": 2838,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -513,7 +521,12 @@
   },
   "errors": [],
   "errorsCount": 0,
-  "warnings": [],
-  "warningsCount": 0,
+  "warnings": [
+    {
+      "message": "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value.\nSet 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/",
+      "stack": "NoModeWarning: configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value.\nSet 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/WarnNoModeSetPlugin.js:20:30\n    at Hook.eval [as call] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:25:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:14:14)\n    at Compiler.newCompilation (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:992:30)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:1035:29\n    at Hook.eval [as callAsync] (eval at create (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/tapable/lib/Hook.js:18:14)\n    at Compiler.compile (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:1030:28)\n    at /Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:473:12\n    at Compiler.readRecords (/Users/eryk/Projects/webpack-enhanced-stats-plugin/playground/webpack-5/node_modules/webpack/lib/Compiler.js:871:11)"
+    }
+  ],
+  "warningsCount": 1,
   "children": []
 }

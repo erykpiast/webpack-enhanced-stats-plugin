@@ -181,6 +181,8 @@ module.exports = class WebpackEnhancedStatsPlugin {
       })),
     };
 
+    await fs.mkdir(path.dirname(statsJson.outputPath), { recursive: true });
+
     await fs.writeFile(
       path.join(statsJson.outputPath, this.options.filename),
       JSON.stringify(enhancedStats, null, 2),
