@@ -59,5 +59,5 @@ The parsed size of modules importing `.json` files isn't calculated correctly wh
 the [`babel-plugin-inline-json-import`]() is used. It's because of the lack of
 source map support in the plugin. Native JSON support in Webpack 4 and higher
 is quite good, so the bundle shouldn't grow if you remove the plugin. Actually
-parsing should be much faster if you
+parsing should be much faster then
 [because of the smart trick that Webpack uses](https://v8.dev/blog/cost-of-javascript-2019#json).
