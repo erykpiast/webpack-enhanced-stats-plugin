@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.4...v2.9.0) (2021-02-28)
+
+
+### Features
+
+* **docs:** add test pattern to loader config ([4f97cc5](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/4f97cc58b86ea6200133282e697293991a3a3e53))
+
+
+### Bug Fixes
+
+* **io:** create output dir if not exists ([987f7c1](https://github.com/erykpiast/webpack-enhanced-stats-plugin/commit/987f7c105329978886153180e5f6429a08f5ae5b))
+
 ### [2.8.4](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.3...v2.8.4) (2020-12-14)
 
 ### [2.8.3](https://github.com/erykpiast/webpack-enhanced-stats-plugin/compare/v2.8.2...v2.8.3) (2020-11-28)
