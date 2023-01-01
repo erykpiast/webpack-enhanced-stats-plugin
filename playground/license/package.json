@@ -11,9 +11,9 @@
   "license": "MIT",
   "devDependencies": {
     "terser-webpack-plugin": "4.2.3",
-    "webpack": "4.46.0",
+    "webpack": "5.75.0",
     "webpack-bundle-analyzer": "4.4.0",
-    "webpack-cli": "3.3.12",
+    "webpack-cli": "5.0.1",
     "webpack-enhanced-stats-plugin": "file:../../"
   }
 }
